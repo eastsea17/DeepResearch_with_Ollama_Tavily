@@ -4,8 +4,8 @@ from llm_client import OllamaClient
 from tavily_client import TavilyClient
 
 class DeepResearchAgent:
-    def __init__(self):
-        self.llm = OllamaClient()
+    def __init__(self, model_name=None):
+        self.llm = OllamaClient(model_name=model_name)
         self.tavily = TavilyClient()
 
     def run(self, user_query, search_depth=None):

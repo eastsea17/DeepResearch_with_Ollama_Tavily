@@ -3,9 +3,9 @@ import json
 from config import LLMConfig
 
 class OllamaClient:
-    def __init__(self):
+    def __init__(self, model_name=None):
         self.base_url = LLMConfig.BASE_URL
-        self.model = LLMConfig.MODEL_NAME
+        self.model = model_name if model_name else LLMConfig.MODEL_NAME
         self.temperature = LLMConfig.TEMPERATURE
         self.context_window = LLMConfig.CONTEXT_WINDOW
 

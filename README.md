@@ -12,31 +12,36 @@ A powerful, local Deep Research Agent that leverages **DeepSeek-R1** (via Ollama
 
 ## Prerequisites
 
-1.  **Python 3.8+**
-2.  **Ollama**: Installed and running.
+1. **Python 3.8+**
+2. **Ollama**: Installed and running.
     - Pull the model: `ollama pull deepseek-r1:8b`
     - Start the server: `ollama serve`
-3.  **Tavily API Key**: Get one at [tavily.com](https://tavily.com).
+3. **Tavily API Key**: Get one at [tavily.com](https://tavily.com).
 
 ## Installation
 
-1.  Clone the repository:
+1. Clone the repository:
+
     ```bash
     git clone <repository-url>
     cd <repository-directory>
     ```
 
-2.  Install dependencies:
+2. Install dependencies:
+
     ```bash
     pip install requests python-dotenv markdown
     ```
 
-3.  Set up environment variables:
+3. Set up environment variables:
     - Create a `.env` file (or copy `.env.example`):
+
       ```bash
       cp .env.example .env
       ```
+
     - Edit `.env` and add your API key:
+
       ```env
       TAVILY_API_KEY=tvly-xxxxxxxxxxxxxxxxxxxxxxxxxxxx
       ```
@@ -44,21 +49,64 @@ A powerful, local Deep Research Agent that leverages **DeepSeek-R1** (via Ollama
 ## Usage
 
 ### Interactive Mode
+
 Run the agent and enter queries interactively:
+
 ```bash
 python main.py
 ```
 
 ### Command Line Mode
+
 Run a single query directly from the terminal:
+
 ```bash
 python main.py "What is the latest news on Solid State Batteries?" --advanced
 ```
+
 - `--advanced`: (Optional) Use advanced search depth for more comprehensive results.
+
+## Model Selection
+
+You can choose between using a local Ollama model or cloud-based models (if configured in your Ollama setup).
+
+### Available Models
+
+- **Local**: `deepseek-r1:8b` (Default) - Runs locally on your machine.
+- **DeepSeek Cloud**: `deepseek-v3.1:671b-cloud` - High-performance cloud model.
+- **GPT Cloud**: `gpt-oss:120b-cloud` - Alternative cloud model.
+
+### Selecting a Model via CLI
+
+Use the `--model` argument to specify the model at runtime:
+
+```bash
+# Use DeepSeek Cloud
+python main.py "Your query here" --model deepseek-cloud
+
+# Use GPT Cloud
+python main.py "Your query here" --model gpt-cloud
+
+# Use Local Model explicitly
+python main.py "Your query here" --model local
+```
+
+### Setting Default Model
+
+You can change the default model in `config.py`:
+
+```python
+class LLMConfig:
+    # ...
+    # Default Configuration
+    MODEL_NAME = MODEL_DEEPSEEK_CLOUD  # Change this to your preferred default
+    # ...
+```
 
 ## Configuration
 
 You can adjust settings in `config.py`:
+
 - **TavilyConfig**: `SEARCH_DEPTH`, `MAX_RESULTS`, etc.
 - **LLMConfig**: `MODEL_NAME`, `TEMPERATURE`, `CONTEXT_WINDOW`.
 - **ReportConfig**: `RESULTS_DIR`.

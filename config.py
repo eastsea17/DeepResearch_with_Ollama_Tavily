@@ -20,7 +20,13 @@ class TavilyConfig:
     INCLUDE_IMAGES = False
 
 class LLMConfig:
-    MODEL_NAME = "deepseek-r1:8b"
+    # Available Models
+    MODEL_LOCAL = "deepseek-r1:8b"
+    MODEL_DEEPSEEK_CLOUD = "deepseek-v3.1:671b-cloud"
+    MODEL_GPT_OSS_CLOUD = "gpt-oss:120b-cloud"
+
+    # Default Configuration
+    MODEL_NAME = MODEL_DEEPSEEK_CLOUD
     BASE_URL = "http://localhost:11434/api/generate"
     TEMPERATURE = 0.6
     CONTEXT_WINDOW = 8192
