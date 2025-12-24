@@ -116,6 +116,56 @@ You can adjust settings in `config.py`:
 - **Console**: Displays the agent's thinking process, search queries, and final answer.
 - **HTML Reports**: Saved in the `results/` directory (e.g., `results/research_report_20251204_083047.html`).
 
+## System Architecture
+
+```mermaid
+graph TD
+    %% Define Styles
+    classDef user fill:#f9f9f9,stroke:#333,stroke-width:2px,color:black;
+    classDef logic fill:#e1f5fe,stroke:#0277bd,stroke-width:2px,color:black;
+    classDef llm fill:#fff9c4,stroke:#fbc02d,stroke-width:2px,stroke-dasharray: 5 5,color:black;
+    classDef ext fill:#e0f2f1,stroke:#00695c,stroke-width:2px,color:black;
+    classDef output fill:#dcedc8,stroke:#558b2f,stroke-width:2px,color:black;
+
+    %% Nodes
+    User([👤 User Query]):::user
+    
+    subgraph Agent [Deep Research Agent]
+        direction TB
+        
+        %% Step 1: Planning
+        Planner(Plan Research):::logic
+        Think1{LLM Reasoning<br/>DeepSeek-R1}:::llm
+        Queries[Generated Search Queries]:::logic
+        
+        %% Step 2: Execution
+        Executor(Execute Search):::logic
+        Tavily(Tavily API):::ext
+        Results[Raw Search Results]:::logic
+        
+        %% Step 3: Synthesis
+        Synthesizer(Synthesize Answer):::logic
+        Think2{LLM Synthesis<br/>DeepSeek-R1}:::llm
+    end
+    
+    Output1[Console Output<br/>Thinking Process & Answer]:::output
+    Output2[HTML Report<br/>results/*.html]:::output
+
+    %% Flow Connections
+    User --> Planner
+    Planner --> Think1
+    Think1 -- "<think> & JSON" --> Queries
+    
+    Queries --> Executor
+    Executor -- "Search Query" --> Tavily
+    Tavily -- "Web Content" --> Executor
+    Executor --> Results
+    
+    Results --> Synthesizer
+    Synthesizer --> Think2
+    Think2 -- "Final Answer with Citations" --> Output1
+    Think2 --> Output2
+
 ## License
 
 MIT License
