@@ -128,28 +128,28 @@ graph TD
     classDef output fill:#dcedc8,stroke:#558b2f,stroke-width:2px,color:black;
 
     %% Nodes
-    User([👤 User Query]):::user
+    User(["👤 User Query"]):::user
     
     subgraph Agent [Deep Research Agent]
         direction TB
         
         %% Step 1: Planning
-        Planner(Plan Research):::logic
-        Think1{LLM Reasoning<br/>DeepSeek-R1}:::llm
-        Queries[Generated Search Queries]:::logic
+        Planner("Plan Research"):::logic
+        Think1{"LLM Reasoning<br/>(DeepSeek-R1)"}:::llm
+        Queries["Generated Search Queries"]:::logic
         
         %% Step 2: Execution
-        Executor(Execute Search):::logic
-        Tavily(Tavily API):::ext
-        Results[Raw Search Results]:::logic
+        Executor("Execute Search"):::logic
+        Tavily("Tavily API"):::ext
+        Results["Raw Search Results"]:::logic
         
         %% Step 3: Synthesis
-        Synthesizer(Synthesize Answer):::logic
-        Think2{LLM Synthesis<br/>DeepSeek-R1}:::llm
+        Synthesizer("Synthesize Answer"):::logic
+        Think2{"LLM Synthesis<br/>(DeepSeek-R1)"}:::llm
     end
     
-    Output1[Console Output<br/>Thinking Process & Answer]:::output
-    Output2[HTML Report<br/>results/*.html]:::output
+    Output1["Console Output<br/>(Thinking Process & Answer)"]:::output
+    Output2["HTML Report<br/>(results/*.html)"]:::output
 
     %% Flow Connections
     User --> Planner
@@ -165,6 +165,7 @@ graph TD
     Synthesizer --> Think2
     Think2 -- "Final Answer with Citations" --> Output1
     Think2 --> Output2
+```
 
 ## License
 
