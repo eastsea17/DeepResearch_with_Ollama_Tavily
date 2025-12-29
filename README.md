@@ -62,6 +62,7 @@ Run a single query directly from the terminal:
 
 ```bash
 python main.py "What is the latest news on Solid State Batteries?" --advanced
+python main.py "Analyze the impact of Nvidia's acquisition of Groq on the AI ​​chip industry." --advanced
 ```
 
 - `--advanced`: (Optional) Use advanced search depth for more comprehensive results.

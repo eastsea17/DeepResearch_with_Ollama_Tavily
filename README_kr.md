@@ -62,6 +62,7 @@ python main.py
 
 ```bash
 python main.py "전고체 배터리에 대한 최근 뉴스는 무엇입니까?" --advanced
+python main.py "NVIDIA가 Groq을 인수하면서 AI 칩 분야에 어떤 영향을 미칠지 분석해주세요." --advanced
 ```
 
 - `--advanced`: (선택 사항) 더 포괄적인 결과를 위해 고급 검색 깊이를 사용합니다.
