@@ -40,9 +40,8 @@ def main():
     search_depth = "advanced" if args.advanced else "basic"
 
     print("==========================================")
-    print("      Deep Research Agent (DeepSeek-R1)   ")
+    print("      Deep Research Agent   ")
     print("==========================================")
-    print("      Deep Research Agent (DeepSeek-R1)   ")
     print(f"      Mode: {search_depth.upper()}        ")
     print(f"      Model: {selected_model}             ")
     print("==========================================")
