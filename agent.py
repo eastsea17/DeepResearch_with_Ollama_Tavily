@@ -70,12 +70,21 @@ class DeepResearchAgent:
             print(think_match.group(1).strip())
             print("-" * 30)
         
-        # Extract JSON
-        # Try to find JSON array in the response
-        json_match = re.search(r"\[.*\]", response, re.DOTALL)
+        # Clean response for JSON extraction: remove <think> blocks
+        cleaned_response = re.sub(r"<think>.*?</think>", "", response, flags=re.DOTALL).strip()
+        
+        # Try to find JSON content
+        # Priority 1: Look for JSON code block
+        json_match = re.search(r"```(?:json)?\s*(\[.*?\])\s*```", cleaned_response, re.DOTALL)
+        
+        # Priority 2: Look for list structure directly
+        if not json_match:
+             json_match = re.search(r"(\[.*\])", cleaned_response, re.DOTALL)
+             
         if json_match:
+            json_str = json_match.group(1)
             try:
-                queries = json.loads(json_match.group(0))
+                queries = json.loads(json_str)
                 return queries
             except json.JSONDecodeError:
                 print("Error decoding JSON from LLM response.")

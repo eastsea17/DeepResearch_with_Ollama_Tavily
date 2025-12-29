@@ -1,7 +1,36 @@
 import os
 import datetime
 import markdown
+import json
+import re
 from config import ReportConfig
+
+def _json_to_html(data):
+    """
+    Recursively converts a JSON object (dict or list) into an HTML structure.
+    And renders markdown for string values.
+    """
+    if isinstance(data, dict):
+        html = '<table style="width: 100%; border-collapse: collapse; margin-top: 10px;">'
+        for key, value in data.items():
+            html += f'<tr><th style="width: 30%; background-color: #f2f2f2; border: 1px solid #ddd; padding: 8px; vertical-align: top;">{key}</th>'
+            html += f'<td style="border: 1px solid #ddd; padding: 8px;">{_json_to_html(value)}</td></tr>'
+        html += '</table>'
+        return html
+    elif isinstance(data, list):
+        html = '<ul>'
+        for item in data:
+            html += f'<li>{_json_to_html(item)}</li>'
+        html += '</ul>'
+        return html
+    elif isinstance(data, str):
+        # Render markdown content
+        # Check if it's a simple string to avoid excessive <p> tags for short values?
+        # Markdown usually wraps in <p>. 
+        # For tables, <p> is fine.
+        return markdown.markdown(data)
+    else:
+        return str(data)
 
 def generate_html_report(data):
     """
@@ -26,8 +55,31 @@ def generate_html_report(data):
     filename = f"research_report_{timestamp}.html"
     filepath = os.path.join(results_dir, filename)
     
-    # Convert Markdown answer to HTML
-    final_answer_html = markdown.markdown(final_answer)
+    # Try to parse final_answer as JSON
+    final_answer_html = ""
+    json_parsed = False
+    
+    # Clean up <think> blocks if present
+    cleaned_answer = re.sub(r"<think>.*?</think>", "", final_answer, flags=re.DOTALL).strip()
+    
+    # Attempt to find JSON block
+    # Look for content between ```json and ``` or just start/end braces
+    json_match = re.search(r"```json\s*(.*?)\s*```", cleaned_answer, re.DOTALL)
+    if not json_match:
+        json_match = re.search(r"(\{.*\})", cleaned_answer, re.DOTALL)
+        
+    if json_match:
+        json_str = json_match.group(1) if json_match.lastindex else json_match.group(0)
+        try:
+            parsed_json = json.loads(json_str)
+            final_answer_html = _json_to_html(parsed_json)
+            json_parsed = True
+        except json.JSONDecodeError:
+            pass
+            
+    if not json_parsed:
+        # Convert Markdown answer to HTML
+        final_answer_html = markdown.markdown(final_answer)
     
     # Build HTML content
     html_content = f"""
@@ -47,6 +99,8 @@ def generate_html_report(data):
             th {{ background-color: #f2f2f2; }}
             .source-url {{ font-size: 0.9em; color: #7f8c8d; }}
             .answer {{ background-color: #f9f9f9; padding: 20px; border-radius: 5px; border: 1px solid #e0e0e0; }}
+            ul {{ padding-left: 20px; }}
+            li {{ margin-bottom: 5px; }}
         </style>
     </head>
     <body>
