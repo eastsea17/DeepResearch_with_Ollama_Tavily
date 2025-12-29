@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from agent import DeepResearchAgent
 
 from report_generator import generate_html_report
-from config import LLMConfig
+from config import LLMConfig, TavilyConfig
 
 def main():
     # Load environment variables
@@ -21,7 +21,7 @@ def main():
     # Parse Command Line Arguments
     parser = argparse.ArgumentParser(description="Deep Research Agent powered by DeepSeek-R1")
     parser.add_argument("query", nargs="?", help="The research topic")
-    parser.add_argument("--advanced", action="store_true", help="Use advanced search depth")
+    parser.add_argument("--advanced", action="store_true", help="Use advanced search depth (overrides config)")
     parser.add_argument("--model", choices=["local", "deepseek-cloud", "gpt-cloud"], default=None, help="Select the LLM model to use")
     args = parser.parse_args()
 
@@ -37,7 +37,11 @@ def main():
     else:
         selected_model = LLMConfig.MODEL_NAME
 
-    search_depth = "advanced" if args.advanced else "basic"
+    # Determine search depth: CLI arg takes precedence over Config
+    if args.advanced:
+        search_depth = "advanced"
+    else:
+        search_depth = TavilyConfig.SEARCH_DEPTH
 
     print("==========================================")
     print("      Deep Research Agent   ")

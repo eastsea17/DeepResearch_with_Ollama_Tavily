@@ -1,0 +1,1778 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Research Report: NVIDIA가 Grok을 인수하면서 앞으로 AI 칩 생태계에 어떤 영향을 줄지 분석해줘.</title>
+        <style>
+            body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+            h1 { color: #2c3e50; }
+            h2 { color: #34495e; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px; }
+            .section { margin-bottom: 30px; }
+            table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; vertical-align: top; }
+            th { background-color: #f2f2f2; }
+            .source-url { font-size: 0.9em; color: #7f8c8d; }
+            .answer { background-color: #f9f9f9; padding: 20px; border-radius: 5px; border: 1px solid #e0e0e0; }
+            ul { padding-left: 20px; }
+            li { margin-bottom: 5px; }
+        </style>
+    </head>
+    <body>
+        <h1>Deep Research Report</h1>
+        
+        <div class="section">
+            <h2>Research Topic</h2>
+            <p><strong>NVIDIA가 Grok을 인수하면서 앞으로 AI 칩 생태계에 어떤 영향을 줄지 분석해줘.</strong></p>
+        </div>
+        
+        <div class="section">
+            <h2>Final Answer</h2>
+            <div class="answer">
+                <p>답변을 작성하기 전에, 먼저 검색 결과를 종합하여 핵심 정보를 구조화해 보겠습니다.</p>
+<h2>검증 노트 (<think>)</h2>
+<h3>1. 거래의 성격 및 내용</h3>
+<ul>
+<li><strong>공식 발표</strong>: NVIDIA와 Groq는 2025년 12월 24일 "비독점 라이선스 계약"을 체결했습니다. Groq의 추론 기술을 라이선스하고, CEO Jonathan Ross를 포함한 핵심 인력이 NVIDIA로 합류합니다.</li>
+<li><strong>금액</strong>: CNBC 등 여러 매체에서 약 200억 달러(한화 약 29조 원)로 보도되었으나, 공식 확인은 없습니다.</li>
+<li><strong>구조</strong>: 전통적인 인수가 아닌 "자산 인수 + 인력 흡수(acqui-hire)" 형태로, Groq는 독립 회사로 남아 GroqCloud 사업을 계속합니다.</li>
+<li><strong>NVIDIA 입장</strong>: Jensen Huang CEO는 "Groq를 인수하는 것이 아니며, 인재를 영입하고 IP를 라이선스한다"고 명시했습니다.</li>
+</ul>
+<h3>2. Groq의 기술 및 강점</h3>
+<ul>
+<li><strong>LPU(Language Processing Unit)</strong>: Groq는 GPU와 다른 접근법인 LPU를 개발했으며, 특히 AI 추론에서 낮은 지연 시간과 높은 에너지 효율성을 강점으로 합니다.</li>
+<li><strong>Google TPU 연관</strong>: 창립자 Jonathan Ross는 Google의 TPU 개발에 참여한 경험이 있어, NVIDIA의 Google 경쟁 대응에 도움이 될 것으로 예상됩니다.</li>
+</ul>
+<h3>3. AI 칩 생태계 영향</h3>
+<ul>
+<li><strong>NVIDIA의 전략적 강화</strong>: 추론 시장에서의 경쟁력 강화로, Google TPU, Amazon Inferentia 등 자체 칩 개발 경쟁자에 대응합니다.</li>
+<li><strong>반독점 규제 회피</strong>: 전면적 인수 대신 라이선스 계약으로 규제 장애를 피하고 신속하게 기술과 인력을 확보했습니다.</li>
+<li><strong>경쟁 구도 변화</strong>: 잠재적 경쟁자였던 Groq의 기술이 NVIDIA에 흡수되며, 다른 스타트업(예: Cerebras, Sambanova)의 독립적 성장 가능성에 의문이 제기됩니다.</li>
+<li><strong>생태계 통합</strong>: NVIDIA의 CUDA 생태계와 Groq의 LPU 기술 결합으로 고객에게 더 폭넓은 솔루션 제공이 가능해질 전망입니다.</li>
+</ul>
+<h3>4. 향후 전망</h3>
+<ul>
+<li><strong>단기</strong>: Groq 기술 통합으로 추론 시장 점유율 확대와 실시간 AI 애플리케이션 성능 개선이 예상됩니다.</li>
+<li><strong>장기</strong>: AI 칩 시장의 혁신 다양성 감소 우려가 있으나, NVIDIA의 선도적 위치 강화와 함께 hyperscaler들의 자체 칩 개발 가속화를 유도할 수 있습니다.</li>
+</ul>
+<h3>5. 검증 필요 사항</h3>
+<ul>
+<li>200억 달러 거래 금액은 공식 확인되지 않았으므로, 주의가 필요합니다.</li>
+<li>Groq의 지속적 독립성과 기술 라이선스의 비독점성이 향후 경쟁에 미치는 영향은 지속적 관찰이 필요합니다.</li>
+</ul>
+<p>이제 이 정보를 바탕으로 최종 답변을 작성하겠습니다.</p>
+<hr />
+<h2>NVIDIA의 Groq 라이선스 계약이 AI 칩 생태계에 미치는 영향 분석</h2>
+<p>2025년 12월 24일, NVIDIA가 AI 칩 스타트업 Groq와 체결한 비독점 라이선스 계약은 공식적으로는 인수가 아니지만, 실질적으로는 약 200억 달러(약 29조 원) 규모의 자산 인수와 핵심 인력 흡수(acqui-hire)에 해당하는 거래로, AI 칩 생태계에 중대한 영향을 미칠 것으로 예상됩니다.以下는 주요 영향 분석입니다.</p>
+<h3>1. <strong>거래 개요 및 전략적 의도</strong></h3>
+<ul>
+<li><strong>비독점 라이선스 계약</strong>: NVIDIA는 Groq의 LPU(Language Processing Unit) 기술을 라이선스하고, 창립자 Jonathan Ross(Google TPU 개발 경험자) 및 핵심 엔지니어들을 영입합니다. Groq는 독립 회사로 남아 클라우드 사업을 유지합니다[1, 4, 5].</li>
+<li><strong>전략적 목표</strong>: NVIDIA는 AI 작업 중 <strong>추론(Inference)</strong> 시장에서의 경쟁력을 강화하려 합니다. Groq의 LPU는 낮은 지연 시간과 높은 에너지 효율성으로 알려져 있으며, 이는 Google의 TPU, Amazon의 Inferentia 등 자체 칩을 개발하는 경쟁사들에 대한 대응 차원입니다[3, 6].</li>
+<li><strong>규제 회피</strong>: 전통적인 인수(M&amp;A)보다 라이선스 계약 형태를 선택함으로써, 반독점 규제 승인에 따르는 시간과 불확실성을 피하고 신속하게 기술을 통합했습니다[7, 9].</li>
+</ul>
+<h3>2. <strong>AI 칩 생태계에 미치는 직접적 영향</strong></h3>
+<ul>
+<li><strong>NVIDIA의 시장 지배력 강화</strong>: NVIDIA는 이미 AI 학습(Training) 시장에서 80% 이상의 점유율을 차지하고 있으나, 추론 시장에서는 상대적으로 경쟁이 치열했습니다. Groq의 기술을 통해 추론 분야에서도 경쟁 우위를 확보할 수 있을 것입니다[6, 8].</li>
+<li><strong>경쟁 구도 변화</strong>: Groq는 NVIDIA의 주요 잠재적 경쟁자 중 하나였으나, 이번 거래로 인해 다른 AI 칩 스타트업(예: Cerebras, Sambanova)들은 독립적으로 성장하기 더 어려워질 수 있습니다. NVIDIA의 막대한 자본력으로 추가 인수나 협상이 예상됩니다[5, 10].</li>
+<li><strong>생태계 통합 가속화</strong>: NVIDIA의 CUDA 소프트웨어 생태계와 Groq의 LPU 하드웨어가 결합되면, 고객에게 더욱 종합적이고 효율적인 AI 솔루션을 제공할 수 있어 NVIDIA 플랫폼의 의존도가 높아질 것입니다[2, 10].</li>
+</ul>
+<h3>3. <strong>장기적 전망 및 산업 변화</strong></h3>
+<ul>
+<li><strong>기술 혁신 촉진 및 다양성 위협</strong>: 단기적으로는 NVIDIA의 기술 통합으로 AI 추론 성능이 크게 개선될 수 있으나, 장기적으로는 주요 혁신 기업이 NVIDIA에 흡수되면서 AI 칩 아키텍처의 다양성이 줄어들어 혁신 속도가 느려질 우려가 있습니다[10].</li>
+<li><strong>Hyperscaler들의 대응 가속화</strong>: Google, Amazon, Meta 등 대형 클라우드 업체들은 자체 칩 개발(TPU, Trainium, MTIA 등)을 더욱 가속화하여 NVIDIA 의존도를 낮추려 할 것입니다[6, 8].</li>
+<li><strong>새로운 협력 모델의 정착</strong>: 이번 거래는 인수보다 라이선스와 인력 흡수를 통한 협력이 반독점 규제를 우회하는 효과적인 전략임을 입증했으며, 향후 유사한 거래가 증가할 가능성이 있습니다[7, 9].</li>
+</ul>
+<h3>4. <strong>한계점 및 주의사항</strong></h3>
+<ul>
+<li><strong>금액 확인 필요</strong>: 200억 달러 거래 규모는 공식 발표가 아닌 보도 자료에 기반한 것으로, 정확한 금액은 공식 발표를 지켜봐야 합니다[1, 2].</li>
+<li><strong>Groq의 향후 역할</strong>: Groq가 독립성을 유지하며 타사에 기술을 라이선스할 수 있는 비독점 계약이므로, 향후 Groq가 다른 경쟁자와 협력할 가능성도 배제할 수 없습니다[4].</li>
+</ul>
+<h3>결론</h3>
+<p>NVIDIA의 Groq와의 계약은 단순한 기술 도입이 아닌, AI 칩 생태계의 권력 구조를 재편하는 전략적 이동입니다. NVIDIA는 추론 시장을 장악하고 경쟁사를 선제적으로 흡수함으로써 장기적 주도권을 강화하려 합니다. 그러나 이로 인한 경쟁 약화와 혁신 다양성 감소 우려도 동반되어, 향후 산업의 균형과 hyperscaler들의 대응이 주목될 것입니다.</p>
+<p><strong>참고 문헌</strong>:<br />
+[1] CNBC, "Nvidia buying AI chip startup Groq for about $20 billion," Dec 2025.<br />
+[2] Reuters, "Nvidia, joining Big Tech deal spree, to license Groq," Dec 2025.<br />
+[3] Seeking Alpha, "Nvidia's Groq Megadeal," Dec 2025.<br />
+[4] Groq Newsroom, "Groq and Nvidia Enter Non-Exclusive Licensing Agreement," Dec 2025.<br />
+[5] Calcalistech, "Nvidia’s $20 billion Groq deal," Dec 2025.<br />
+[6] Yahoo Finance, "Nvidia's Groq deal underscores AI chip dominance," Dec 2025.<br />
+[7] Brownstone Research, "NVIDIA 'Acquires' Groq," Dec 2025.<br />
+[8] AInvest, "Nvidia's Aggressive AI Expansion," Dec 2025.<br />
+[9] IntuitionLabs, "Nvidia's Groq Deal: Strategy &amp; Antitrust," Dec 2025.<br />
+[10] Market Minute, "Nvidia Solidifies AI Dominance with Groq," Dec 2025.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Raw Search Results</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Source</th>
+                        <th>Content Snippet</th>
+                    </tr>
+                </thead>
+                <tbody>
+    
+                    <tr>
+                        <td>
+                            <strong>NVIDIA “Acquires” Groq</strong><br>
+                            <a href="https://www.brownstoneresearch.com/bleeding-edge/nvidia-acquires-groq/" class="source-url" target="_blank">https://www.brownstoneresearch.com/bleeding-edge/nvidia-acquires-groq/</a>
+                        </td>
+                        <td>The Bleeding Edge
+
+14 min read
+
+# NVIDIA “Acquires” Groq
+
+NVIDIA’s new licensing deal with Groq may not be a formal acquisition, but in terms of antitrust regulations, it certainly is shady…
+
+Written by
+
+Jeff Brown
+
+Published on
+
+Dec 26, 2025
+
+Managing Editor’s Note: Happy Holidays to all from the Brownstone Research team!
+
+We hope you’ve had fun reading through Optimus’ adventures over the past few days. We certainly enjoyed handing things over to Grok for a little Christmas fun. [...] Again, we wish everyone a very happy holiday season. Now, on to this week’s AMA…
+
+I hope that everyone had a wonderful Christmas holiday this week. I definitely enjoyed mine after this year’s torrid schedule. The fire has been roaring in my fireplace the entire week.
+
+I have to say, I expected a sleepy week in the world of high tech, but that certainly wasn’t the case after seeing this headline:
+
+> NVIDIA buying AI chip startup Groq’s assets for about $20 billion in its largest deal on record. [...] Part of the deal is that Groq’s CEO and other senior leaders will join NVIDIA to manage the assets that NVIDIA acquired, leaving behind a shell of an “independent company” to carry on primarily managing Groq Cloud services.
+
+NVIDIA’s CEO was careful to clarify that, “While we are adding talented employees to our ranks and licensing Groq’s IP, we are not acquiring Groq as a company.”</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Breaking down Nvidia's unusual $20 billion deal with Groq</strong><br>
+                            <a href="https://finance.yahoo.com/news/nvidia-acquire-groq-20-billion-214927907.html" class="source-url" target="_blank">https://finance.yahoo.com/news/nvidia-acquire-groq-20-billion-214927907.html</a>
+                        </td>
+                        <td>Skip to navigation  Skip to main content  Skip to right column   
+
+# Nvidia to acquire Groq for $20 billion in its largest deal ever, CNBC reports
+
+Senad Karaahmetovic
+
+1 min read
+
+In this article:
+
+ StockStory Top Pick
+
+  NVDA
+
+  -0.32%
+ GROQ.PVT
+
+  GOOG
+
+  -0.00%
+
+  BLK
+
+  +0.22%
+
+  SSNLF
+
+  0.00%
+
+Investing.com -- NVIDIA (NASDAQ:NVDA) has agreed to acquire Groq, a designer of high-performance artificial intelligence accelerator chips, in a $20 billion all-cash deal, CNBC reports. [...] Groq is expected to notify investors about the deal later on Wednesday, Davis said. While the acquisition includes Groq’s assets, its early-stage cloud business is excluded from the transaction.
+
+The startup was founded by former engineers behind Google’s tensor processing unit, or TPU, a chip designed to compete with Nvidia in artificial intelligence workloads. [...] If completed, the deal would represent Nvidia’s largest acquisition to date, underscoring the company’s push to strengthen its position in advanced AI hardware.
+
+Related articles
+
+Nvidia to acquire Groq for $20 billion in its largest deal ever, CNBC reports
+
+Silver's Bullish Pattern Points Higher — Keep an Eye on $52 Resistance Zone
+
+3 Strategies to Make the Most of Dow's Record-Breaking Run
+
+Terms  and Privacy Policy
+
+Privacy & Cookie Settings
+
+More Info
+
+## Recommended Stories</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia, joining Big Tech deal spree, to license Groq ...</strong><br>
+                            <a href="https://www.reuters.com/business/nvidia-buy-ai-chip-startup-groq-about-20-billion-cnbc-reports-2025-12-24/" class="source-url" target="_blank">https://www.reuters.com/business/nvidia-buy-ai-chip-startup-groq-about-20-billion-cnbc-reports-2025-12-24/</a>
+                        </td>
+                        <td>Groq did not disclose financial details of the deal. CNBC reported that Nvidia had agreed to acquire Groq for $20 billion in cash, but neither Nvidia nor Groq commented on the report. Groq said in its blog post that it will continue to operate as an independent company with Simon Edwards as CEO and that its cloud business will continue operating. [...] Nvidia's licenses chip tech for inference
+ Groq's leadership transition to Nvidia raises questions about future independence
+ Nvidia's strategic hires reflect trend of acquiring talent without full acquisitions
+
+Dec 24 (Reuters) - Nvidia (NVDA.O), opens new tab has agreed to license chip technology from startup Groq and hire away its CEO, a veteran of Alphabet's (GOOGL.O), opens new tab Google, Groq said in a blog post on Wednesday. [...] Nvidia has agreed to a "non-exclusive" license to Groq's technology, Groq said. It said its founder Jonathan Ross, who helped Google start its AI chip program, as well as Groq President Sunny Madra and other members of its engineering team, will join Nvidia.
+
+Advertisement · Scroll to continue
+
+A person close to Nvidia confirmed the licensing agreement.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia buying AI chip startup Groq for about $20 billion, ...</strong><br>
+                            <a href="https://www.cnbc.com/2025/12/24/nvidia-buying-ai-chip-startup-groq-for-about-20-billion-biggest-deal.html" class="source-url" target="_blank">https://www.cnbc.com/2025/12/24/nvidia-buying-ai-chip-startup-groq-for-about-20-billion-biggest-deal.html</a>
+                        </td>
+                        <td>Jonathan Ross, chief executive officer of Groq Inc., during the GenAI Summit in San Francisco, California, US, on Thursday, May 30, 2024. 
+
+David Paul | Bloomberg | Getty Images
+
+Nvidia has agreed to buy assets from Groq, a designer of high-performance artificial intelligence accelerator chips, for $20 billion in cash, according to Alex Davis, CEO of Disruptive, which led the startup’s latest financing round in September. [...] Nvidia is making its largest purchase ever, acquiring assets from 9-year-old chip startup Groq for about $20 billion.
+   The company was founded by creators of Google’s tensor processing unit, or TPU, which competes with Nvidia for artificial intelligence workloads.
+   Groq, which was valued at $6.9 billion in a financing round in September, framed the deal as a “non-exclusive licensing agreement,” with its CEO and other senior leaders joining Nvidia. 
+
+In this article [...] CREATE FREE ACCOUNT
+
+Markets
+
+Business
+
+Investing
+
+Tech
+
+Politics
+
+Video
+
+Watchlist
+
+Investing Club
+
+Image 4: Join IC
+
+PRO
+
+Image 5: Join Pro
+
+Livestream
+
+Menu
+
+Tech
+
+Nvidia buying AI chip startup Groq’s assets for about $20 billion in its largest deal on record
+
+Published Wed, Dec 24 2025 3:54 PM EST Updated Fri, Dec 26 2025 9:14 AM EST
+
+Image 6: thumbnail
+
+David Faber@DavidFaber
+
+WATCH LIVE</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Breaking: NVIDIA just bought Groq for $20 Billion!</strong><br>
+                            <a href="https://www.youtube.com/watch?v=WOLiBYM1XFk" class="source-url" target="_blank">https://www.youtube.com/watch?v=WOLiBYM1XFk</a>
+                        </td>
+                        <td># Breaking: NVIDIA just bought Groq for $20 Billion!
+## Matthew Berman
+533000 subscribers
+4643 likes
+
+### Description
+140921 views
+Posted: 25 Dec 2025
+Download The Subtle Art of Not Being Replaced 👇🏼
+
+Download Humanities Last Prompt Engineering Guide 👇🏼
+
+Join My Newsletter for Regular AI Updates 👇🏼
+
+Discover The Best AI Tools👇🏼
+
+My Links 🔗
+👉🏻 X: 
+👉🏻 Forward Future X: 
+👉🏻 Instagram: 
+👉🏻 Discord: 
+👉🏻 TikTok: 
+
+Media/Sponsorship Inquiries ✅ [...] couple lines from it. First of all, Nvidia paid 3x Grock's September valuation to acquire it. That is just a few months ago, three times that amount. Every AI lab was GPU dependent, creating massive concentration risk. Google broke free with TPUs for internal use. That is so incredibly important. The TPU proved it can scale pre-training, it can scale inference, and now Google has reportedly been selling the TPUs to external hyperscalers. So, they're not just using the TPUs themselves, they are [...] the money maker. And he's probably thinking, okay, we need to get into the specialized chip game. And so we have the acquisition of Grock, but it's not actually an acquisition. Let's talk about that for a moment. So let's look at the announcement by Grock. Grock and Nvidia entered non-exclusive inference technology licensing agreement to accelerate AI inference at global scale and a little bit about the specifics. Grock announced it has entered into a non-exclusive licensing agreement with</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia's Groq deal underscores how the AI chip giant uses ...</strong><br>
+                            <a href="https://finance.yahoo.com/news/nvidias-groq-deal-underscores-how-the-ai-chip-giant-uses-its-massive-balance-sheet-to-maintain-dominance-183347248.html" class="source-url" target="_blank">https://finance.yahoo.com/news/nvidias-groq-deal-underscores-how-the-ai-chip-giant-uses-its-massive-balance-sheet-to-maintain-dominance-183347248.html</a>
+                        </td>
+                        <td>Nvidia this week said it struck a non-exclusive deal with Groq to license its technology and hired the startup’s founder and CEO Jonathan Ross, its president, and other employees. CNBC reported the agreement to be worth $20 billion, marking Nvidia’s largest-ever deal. (The company declined a request for comment on the figure.)
+
+Prediction Market powered by [...] Cantor Fitzgerald analyst CJ Muse said Nvidia’s "acqui-hire" of Groq talent and licensing of its intellectual property showed the chipmaker “is playing both offense and defense” in the AI space. Muse said the deal would allow Nvidia to take “even greater share of the inference market.”
+
+Nvidia shares rose more than 1% Friday. [...] "This transaction is ... essentially an acquisition of Groq without being labeled one (to avoid the regulators' scrutiny)," added Hedgeye Risk Management analysts in a note Friday.
+
+NasdaqGS - Nasdaq Real Time Price • USD 
+
+# (NVDA)
+
+192.48
+
++3.87
+
++(2.05%)
+
+As of 2:08:55 PM EST. Market Open.
+
+Advanced Chart</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Groq vs. Grok: What's Happening and Why It Matters | by James Fahey</strong><br>
+                            <a href="https://medium.com/@fahey_james/groq-vs-grok-whats-happening-and-why-it-matters-b755cdd4f627" class="source-url" target="_blank">https://medium.com/@fahey_james/groq-vs-grok-whats-happening-and-why-it-matters-b755cdd4f627</a>
+                        </td>
+                        <td>Sitemap
+
+Open in app
+
+Sign in
+
+Sign in
+
+# Groq vs. Grok: What’s Happening and Why It Matters
+
+James Fahey
+
+3 min read
+
+·
+
+7 hours ago
+
+--
+
+1. The Recent Groq News
+
+Right now the biggest story involving Groq is a major strategic deal with Nvidia:
+
+• Nvidia has entered into a licensing agreement with Groq’s technology and hired key executives including Groq CEO Jonathan Ross. The deal focuses on Groq’s inference chip technology and engineering talent. [...] • Reports about a $20 billion acquisition or licensing + talent deal have circulated (though official terms may vary).
+
+• Groq continues to operate as a separate company even as some executives transition to Nvidia.
+
+What is Groq?
+
+Groq, Inc. is an AI hardware company founded by Jonathan Ross. It builds specialized Language Processing Units (LPUs) — chips optimized for running large language models and other AI inference workloads extremely fast and efficiently.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia's Groq Megadeal; A $20B Inference Pivot To Stay King</strong><br>
+                            <a href="https://seekingalpha.com/article/4855988-nvidias-groq-megadeal-20b-inference-pivot-to-stay-king" class="source-url" target="_blank">https://seekingalpha.com/article/4855988-nvidias-groq-megadeal-20b-inference-pivot-to-stay-king</a>
+                        </td>
+                        <td>NVIDIA solidifies its AI chip leadership by swiftly securing a $20B non-exclusive licensing deal with Groq, a still rising AI chip startup.
+ Integrating Groq's LPUs enhances NVDA's inference capabilities, addressing the industry's rapid shift toward specialized, low-latency AI chips.
+ NVDA leverages its vast free cash flow printing machine and entrenched market dominance to preemptively neutralize emerging threats and reinforce its competitive moat. [...] With FCF projected above $200B by FY2028, NVDA is positioned to continue aggressive strategic acquisitions and partnerships in AI. [...] Home page Seeking Alpha - Power to Investors
+
+Search for Symbols, analysts, keywords
+
+# Nvidia's Groq Megadeal; A $20B Inference Pivot To Stay King
+
+Dec. 27, 2025 10:00 AM ETNVIDIA Corporation (NVDA) StockOPENAI, GOOGL, GOOG, AVGO, AVGO:CA, GOOG:CA, NVDA:CA, ZAVG:CA, ZGOO:CA, ZNVD:CA
+
+JR Research
+
+Investing Group Leader
+
+ Comments
+
+## Summary</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia's $20 billion Groq deal: Talent and technology over ...</strong><br>
+                            <a href="https://www.calcalistech.com/ctechnews/article/hjyziyc7wl" class="source-url" target="_blank">https://www.calcalistech.com/ctechnews/article/hjyziyc7wl</a>
+                        </td>
+                        <td># Nvidia’s $20 billion Groq deal: Talent and technology over traditional acquisition
+
+## The transaction underscores the urgency of AI competition and the need to bypass regulatory delays.
+
+Omer Kabir
+
+12:02, 25.12.25
+
+The intensity of the AI race, and the lengths companies will go to gain even a slight advantage, was made clear on Wednesday with the announcement of a deal between AI chip giant Nvidia and chip startup Groq (not to be confused with Elon Musk's Grok). [...] Just three months ago, Groq raised $750 million at a $6.9 billion valuation. On Wednesday, Nvidia agreed to pay, according to some reports, $20 billion, a deal that includes non-exclusive access to Groq’s technology and the transfer of senior employees, led by founder and CEO Jonathan Ross, to Nvidia. $20 billion not to acquire the company, not to acquire its intellectual property, nor even for an exclusive use agreement. Only for permission to use the technology and recruit its people. The sum [...] In a LinkedIn post, Ross said: “Today Groq entered into a non-exclusive licensing agreement with Nvidia for Groq’s inference technology. Along with other members of the Groq team, I’ll be joining Nvidia to help integrate the licensed technology. GroqCloud will continue to operate without interruption.”</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Groq and Nvidia Enter Non-Exclusive Inference ...</strong><br>
+                            <a href="https://groq.com/newsroom/groq-and-nvidia-enter-non-exclusive-inference-technology-licensing-agreement-to-accelerate-ai-inference-at-global-scale" class="source-url" target="_blank">https://groq.com/newsroom/groq-and-nvidia-enter-non-exclusive-inference-technology-licensing-agreement-to-accelerate-ai-inference-at-global-scale</a>
+                        </td>
+                        <td># Groq and Nvidia Enter Non-Exclusive Inference Technology Licensing Agreement to Accelerate AI Inference at Global Scale
+
+## Share this article
+
+Today, Groq announced that it has entered into a non-exclusive licensing agreement with Nvidia for Groq’s inference technology. The agreement reflects a shared focus on expanding access to high-performance, low cost inference. [...] As part of this agreement, Jonathan Ross, Groq’s Founder, Sunny Madra, Groq’s President, and other members of the Groq team will join Nvidia to help advance and scale the licensed technology.
+
+Groq will continue to operate as an independent company with Simon Edwards stepping into the role of Chief Executive Officer.
+
+GroqCloud will continue to operate without interruption.
+
+## Build Fast
+
+Seamlessly integrate Groq starting with just a few lines of code</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia buying AI chip startup Groq for about $20 billion, biggest deal</strong><br>
+                            <a href="https://www.cnbc.com/2025/12/24/nvidia-buying-ai-chip-startup-groq-for-about-20-billion-biggest-deal.html" class="source-url" target="_blank">https://www.cnbc.com/2025/12/24/nvidia-buying-ai-chip-startup-groq-for-about-20-billion-biggest-deal.html</a>
+                        </td>
+                        <td>Nvidia is making its largest purchase ever, acquiring assets from 9-year-old chip startup Groq for about $20 billion.
+   The company was founded by creators of Google’s tensor processing unit, or TPU, which competes with Nvidia for artificial intelligence workloads.
+   Groq, which was valued at $6.9 billion in a financing round in September, framed the deal as a “non-exclusive licensing agreement,” with its CEO and other senior leaders joining Nvidia. 
+
+In this article [...] Jonathan Ross, chief executive officer of Groq Inc., during the GenAI Summit in San Francisco, California, US, on Thursday, May 30, 2024. 
+
+David Paul | Bloomberg | Getty Images
+
+Nvidia has agreed to buy assets from Groq, a designer of high-performance artificial intelligence accelerator chips, for $20 billion in cash, according to Alex Davis, CEO of Disruptive, which led the startup’s latest financing round in September. [...] The deal represents by far Nvidia’s largest purchase ever. The chipmaker’s biggest acquisition to date came in 2019, when it bought Israeli chip designer Mellanox for close to $7 billion. At the end of October, Nvidia had $60.6 billion in cash and short-term investments, up from $13.3 billion in early 2023.
+
+In an email to employees that was obtained by CNBC, Nvidia CEO Jensen Huang said the agreement will expand Nvidia’s capabilities.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Breaking down Nvidia's unusual $20 billion deal with Groq</strong><br>
+                            <a href="https://finance.yahoo.com/news/nvidia-acquire-groq-20-billion-214927907.html" class="source-url" target="_blank">https://finance.yahoo.com/news/nvidia-acquire-groq-20-billion-214927907.html</a>
+                        </td>
+                        <td>Skip to navigation  Skip to main content  Skip to right column   
+
+# Nvidia to acquire Groq for $20 billion in its largest deal ever, CNBC reports
+
+Senad Karaahmetovic
+
+1 min read
+
+In this article:
+
+ StockStory Top Pick
+
+  NVDA
+
+  -0.32%
+ GROQ.PVT
+
+  GOOG
+
+  -0.00%
+
+  BLK
+
+  +0.22%
+
+  SSNLF
+
+  0.00%
+
+Investing.com -- NVIDIA (NASDAQ:NVDA) has agreed to acquire Groq, a designer of high-performance artificial intelligence accelerator chips, in a $20 billion all-cash deal, CNBC reports. [...] If completed, the deal would represent Nvidia’s largest acquisition to date, underscoring the company’s push to strengthen its position in advanced AI hardware.
+
+Related articles
+
+Nvidia to acquire Groq for $20 billion in its largest deal ever, CNBC reports
+
+Silver's Bullish Pattern Points Higher — Keep an Eye on $52 Resistance Zone
+
+3 Strategies to Make the Most of Dow's Record-Breaking Run
+
+Terms  and Privacy Policy
+
+Privacy & Cookie Settings
+
+More Info
+
+## Recommended Stories [...] Groq is expected to notify investors about the deal later on Wednesday, Davis said. While the acquisition includes Groq’s assets, its early-stage cloud business is excluded from the transaction.
+
+The startup was founded by former engineers behind Google’s tensor processing unit, or TPU, a chip designed to compete with Nvidia in artificial intelligence workloads.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>NVIDIA “Acquires” Groq - Brownstone Research</strong><br>
+                            <a href="https://www.brownstoneresearch.com/bleeding-edge/nvidia-acquires-groq/" class="source-url" target="_blank">https://www.brownstoneresearch.com/bleeding-edge/nvidia-acquires-groq/</a>
+                        </td>
+                        <td>The Bleeding Edge
+
+14 min read
+
+# NVIDIA “Acquires” Groq
+
+NVIDIA’s new licensing deal with Groq may not be a formal acquisition, but in terms of antitrust regulations, it certainly is shady…
+
+Written by
+
+Jeff Brown
+
+Published on
+
+Dec 26, 2025
+
+Managing Editor’s Note: Happy Holidays to all from the Brownstone Research team!
+
+We hope you’ve had fun reading through Optimus’ adventures over the past few days. We certainly enjoyed handing things over to Grok for a little Christmas fun. [...] Again, we wish everyone a very happy holiday season. Now, on to this week’s AMA…
+
+I hope that everyone had a wonderful Christmas holiday this week. I definitely enjoyed mine after this year’s torrid schedule. The fire has been roaring in my fireplace the entire week.
+
+I have to say, I expected a sleepy week in the world of high tech, but that certainly wasn’t the case after seeing this headline:
+
+> NVIDIA buying AI chip startup Groq’s assets for about $20 billion in its largest deal on record. [...] Part of the deal is that Groq’s CEO and other senior leaders will join NVIDIA to manage the assets that NVIDIA acquired, leaving behind a shell of an “independent company” to carry on primarily managing Groq Cloud services.
+
+NVIDIA’s CEO was careful to clarify that, “While we are adding talented employees to our ranks and licensing Groq’s IP, we are not acquiring Groq as a company.”</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia buys AI chip startup Groq's assets for $20 billion in ...</strong><br>
+                            <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-buys-ai-chip-startup-groqs-assets-for-usd20-billion-in-the-companys-biggest-deal-ever-transaction-includes-acquihires-of-key-groq-employees-including-ceo" class="source-url" target="_blank">https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-buys-ai-chip-startup-groqs-assets-for-usd20-billion-in-the-companys-biggest-deal-ever-transaction-includes-acquihires-of-key-groq-employees-including-ceo</a>
+                        </td>
+                        <td>Nvidia, the largest GPU manufacturer in the world and the linchpin of the AI data center buildout, has entered into a non-exclusive licensing agreement with AI chip rival Groq to use the company's intellectual property. The deal is valued at $20 billion and includes acquihires of key employees within the firm who will now be joining Nvidia. The firm spent $7 billion for Israeli chip company Mellanox in 2019, so the record has now been toppled. [...] Don't miss these
+
+Trending
+
+ CES 2026
+ RAM Shortage
+ Last Minute Gift Ideas
+ TH Poem
+ Steam Machine
+ FSR Redstone
+ Intel 18A
+ Win 10 EOL
+ Panther Lake
+
+1. Tech Industry
+2. Artificial Intelligence
+
+# Nvidia buys AI chip startup Groq's assets for $20 billion in the company's biggest deal ever — Transaction includes acquihires of key Groq employees, including CEO
+
+News
+
+By Hassam Nasir   published
+
+GroqCloud will continue operations as is.
+
+(Image credit: Getty Images / Bloomberg)
+
+Share by: [...] “We plan to integrate Groq’s low-latency processors into the NVIDIA AI factory architecture, extending the platform to serve an even broader range of AI inference and real-time workloads... While we are adding talented employees to our ranks and licensing Groq’s IP, we are not acquiring Groq as a company.” — Jensen Huang, Nvidia CEO (as per CNBC).</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia, joining Big Tech deal spree, to license Groq technology, hire ...</strong><br>
+                            <a href="https://www.reuters.com/business/nvidia-buy-ai-chip-startup-groq-about-20-billion-cnbc-reports-2025-12-24/" class="source-url" target="_blank">https://www.reuters.com/business/nvidia-buy-ai-chip-startup-groq-about-20-billion-cnbc-reports-2025-12-24/</a>
+                        </td>
+                        <td>Groq did not disclose financial details of the deal. CNBC reported that Nvidia had agreed to acquire Groq for $20 billion in cash, but neither Nvidia nor Groq commented on the report. Groq said in its blog post that it will continue to operate as an independent company with Simon Edwards as CEO and that its cloud business will continue operating. [...] Nvidia has agreed to a "non-exclusive" license to Groq's technology, Groq said. It said its founder Jonathan Ross, who helped Google start its AI chip program, as well as Groq President Sunny Madra and other members of its engineering team, will join Nvidia.
+
+Advertisement · Scroll to continue
+
+A person close to Nvidia confirmed the licensing agreement. [...] Nvidia's licenses chip tech for inference
+ Groq's leadership transition to Nvidia raises questions about future independence
+ Nvidia's strategic hires reflect trend of acquiring talent without full acquisitions
+
+Dec 24 (Reuters) - Nvidia (NVDA.O), opens new tab has agreed to license chip technology from startup Groq and hire away its CEO, a veteran of Alphabet's (GOOGL.O), opens new tab Google, Groq said in a blog post on Wednesday.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Breaking: NVIDIA just bought Groq for $20 Billion! - YouTube</strong><br>
+                            <a href="https://www.youtube.com/watch?v=WOLiBYM1XFk" class="source-url" target="_blank">https://www.youtube.com/watch?v=WOLiBYM1XFk</a>
+                        </td>
+                        <td>couple lines from it. First of all, Nvidia paid 3x Grock's September valuation to acquire it. That is just a few months ago, three times that amount. Every AI lab was GPU dependent, creating massive concentration risk. Google broke free with TPUs for internal use. That is so incredibly important. The TPU proved it can scale pre-training, it can scale inference, and now Google has reportedly been selling the TPUs to external hyperscalers. So, they're not just using the TPUs themselves, they are [...] the money maker. And he's probably thinking, okay, we need to get into the specialized chip game. And so we have the acquisition of Grock, but it's not actually an acquisition. Let's talk about that for a moment. So let's look at the announcement by Grock. Grock and Nvidia entered non-exclusive inference technology licensing agreement to accelerate AI inference at global scale and a little bit about the specifics. Grock announced it has entered into a non-exclusive licensing agreement with [...] The CEO of Grock, that is GRQ, just made a major announcement. They have been acquired for $20 billion. And I'm going to explain the air quotes in a bit, but it is effectively a 20 billion acquisition of Grock, the AI chip maker. And I have a lot of thoughts about this, especially because I'm a Grock investor. I invested about a year and a half ago. I have no inside information. I learned about the acquisition yesterday just like everybody else on Christmas Eve. Even right now, I still don't</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia buying AI chip startup Groq for about $20 billion in its largest ...</strong><br>
+                            <a href="https://www.reddit.com/r/technology/comments/1puxifg/exclusive_nvidia_buying_ai_chip_startup_groq_for/" class="source-url" target="_blank">https://www.reddit.com/r/technology/comments/1puxifg/exclusive_nvidia_buying_ai_chip_startup_groq_for/</a>
+                        </td>
+                        <td>r/technology icon
+r/technology icon
+
+Subreddit dedicated to the news and discussions about the creation and use of technology and its surrounding issues.
+
+# Exclusive: Nvidia buying AI chip startup Groq for about $20 billion in its largest acquisition on record
+
+r/technology - Exclusive: Nvidia buying AI chip startup Groq for about $20 billion in its largest acquisition on record
+
+# Related Answers Section [...] r/technology
+
+r/MapPorn
+
+These subreddits can provide more personalized advice and experiences from other Redditors.
+
+Create your account and connect with a world of communities.
+
+Anyone can view, post, and comment to this community [...] 5G Home Internet: 5G has provided a viable alternative to traditional ISPs for some users, offering comparable performance at a lower cost. "5G gave me options for home internet that werent Comcast."
+
+### Future of 5G and 6G
+
+Ongoing Development: 5G is still evolving, and future improvements are expected. "It hasn’t come and gone. It’s still evolving."</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia's Groq deal underscores how the AI chip giant uses its ...</strong><br>
+                            <a href="https://finance.yahoo.com/news/nvidias-groq-deal-underscores-how-the-ai-chip-giant-uses-its-massive-balance-sheet-to-maintain-dominance-183347248.html" class="source-url" target="_blank">https://finance.yahoo.com/news/nvidias-groq-deal-underscores-how-the-ai-chip-giant-uses-its-massive-balance-sheet-to-maintain-dominance-183347248.html</a>
+                        </td>
+                        <td>Cantor Fitzgerald analyst CJ Muse said Nvidia’s "acqui-hire" of Groq talent and licensing of its intellectual property showed the chipmaker “is playing both offense and defense” in the AI space. Muse said the deal would allow Nvidia to take “even greater share of the inference market.”
+
+Nvidia shares rose more than 1% Friday. [...] Nvidia this week said it struck a non-exclusive deal with Groq to license its technology and hired the startup’s founder and CEO Jonathan Ross, its president, and other employees. CNBC reported the agreement to be worth $20 billion, marking Nvidia’s largest-ever deal. (The company declined a request for comment on the figure.)
+
+Prediction Market powered by [...] The move is just the latest in a string of AI deals by Nvidia, the world’s first $5 trillion company. The chipmaker’s investments in AI firms span the entire market, ranging from large language model developers such as OpenAI (OPAI.PVT) and xAI (XAAI.PVT) to “neoclouds” like Lambda (LAMD.PVT) and CoreWeave (CRWV), which specialize in AI services and compete with its Big Tech customers.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia's $20 billion Groq deal: Talent and technology over traditional ...</strong><br>
+                            <a href="https://www.calcalistech.com/ctechnews/article/hjyziyc7wl" class="source-url" target="_blank">https://www.calcalistech.com/ctechnews/article/hjyziyc7wl</a>
+                        </td>
+                        <td># Nvidia’s $20 billion Groq deal: Talent and technology over traditional acquisition
+
+## The transaction underscores the urgency of AI competition and the need to bypass regulatory delays.
+
+Omer Kabir
+
+12:02, 25.12.25
+
+The intensity of the AI race, and the lengths companies will go to gain even a slight advantage, was made clear on Wednesday with the announcement of a deal between AI chip giant Nvidia and chip startup Groq (not to be confused with Elon Musk's Grok). [...] Nvidia CEO Jensen Huang told employees that the company plans “to integrate Groq’s low-latency processors into the NVIDIA AI factory architecture, extending the platform to serve an even broader range of AI inference and real-time workloads.”
+
+Huang added that, “While we are adding talented employees to our ranks and licensing Groq’s IP, we are not acquiring Groq as a company.”
+
+Groq, for its part, will continue operating independently, with Simon Edwards taking over Ross’s role. [...] Just three months ago, Groq raised $750 million at a $6.9 billion valuation. On Wednesday, Nvidia agreed to pay, according to some reports, $20 billion, a deal that includes non-exclusive access to Groq’s technology and the transfer of senior employees, led by founder and CEO Jonathan Ross, to Nvidia. $20 billion not to acquire the company, not to acquire its intellectual property, nor even for an exclusive use agreement. Only for permission to use the technology and recruit its people. The sum</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Groq and Nvidia Enter Non-Exclusive Inference ...</strong><br>
+                            <a href="https://groq.com/newsroom/groq-and-nvidia-enter-non-exclusive-inference-technology-licensing-agreement-to-accelerate-ai-inference-at-global-scale" class="source-url" target="_blank">https://groq.com/newsroom/groq-and-nvidia-enter-non-exclusive-inference-technology-licensing-agreement-to-accelerate-ai-inference-at-global-scale</a>
+                        </td>
+                        <td># Groq and Nvidia Enter Non-Exclusive Inference Technology Licensing Agreement to Accelerate AI Inference at Global Scale
+
+## Share this article
+
+Today, Groq announced that it has entered into a non-exclusive licensing agreement with Nvidia for Groq’s inference technology. The agreement reflects a shared focus on expanding access to high-performance, low cost inference. [...] As part of this agreement, Jonathan Ross, Groq’s Founder, Sunny Madra, Groq’s President, and other members of the Groq team will join Nvidia to help advance and scale the licensed technology.
+
+Groq will continue to operate as an independent company with Simon Edwards stepping into the role of Chief Executive Officer.
+
+GroqCloud will continue to operate without interruption.
+
+## Build Fast
+
+Seamlessly integrate Groq starting with just a few lines of code</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia, joining Big Tech deal spree, to license Groq ...</strong><br>
+                            <a href="https://www.reuters.com/business/nvidia-buy-ai-chip-startup-groq-about-20-billion-cnbc-reports-2025-12-24/" class="source-url" target="_blank">https://www.reuters.com/business/nvidia-buy-ai-chip-startup-groq-about-20-billion-cnbc-reports-2025-12-24/</a>
+                        </td>
+                        <td>Groq did not disclose financial details of the deal. CNBC reported that Nvidia had agreed to acquire Groq for $20 billion in cash, but neither Nvidia nor Groq commented on the report. Groq said in its blog post that it will continue to operate as an independent company with Simon Edwards as CEO and that its cloud business will continue operating. [...] Nvidia has agreed to a "non-exclusive" license to Groq's technology, Groq said. It said its founder Jonathan Ross, who helped Google start its AI chip program, as well as Groq President Sunny Madra and other members of its engineering team, will join Nvidia.
+
+Advertisement · Scroll to continue
+
+A person close to Nvidia confirmed the licensing agreement. [...] Nvidia's licenses chip tech for inference
+ Groq's leadership transition to Nvidia raises questions about future independence
+ Nvidia's strategic hires reflect trend of acquiring talent without full acquisitions
+
+Dec 24 (Reuters) - Nvidia (NVDA.O), opens new tab has agreed to license chip technology from startup Groq and hire away its CEO, a veteran of Alphabet's (GOOGL.O), opens new tab Google, Groq said in a blog post on Wednesday.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>NVIDIA “Acquires” Groq</strong><br>
+                            <a href="https://www.brownstoneresearch.com/bleeding-edge/nvidia-acquires-groq/" class="source-url" target="_blank">https://www.brownstoneresearch.com/bleeding-edge/nvidia-acquires-groq/</a>
+                        </td>
+                        <td>The Bleeding Edge
+
+14 min read
+
+# NVIDIA “Acquires” Groq
+
+NVIDIA’s new licensing deal with Groq may not be a formal acquisition, but in terms of antitrust regulations, it certainly is shady…
+
+Written by
+
+Jeff Brown
+
+Published on
+
+Dec 26, 2025
+
+Managing Editor’s Note: Happy Holidays to all from the Brownstone Research team!
+
+We hope you’ve had fun reading through Optimus’ adventures over the past few days. We certainly enjoyed handing things over to Grok for a little Christmas fun. [...] Part of the deal is that Groq’s CEO and other senior leaders will join NVIDIA to manage the assets that NVIDIA acquired, leaving behind a shell of an “independent company” to carry on primarily managing Groq Cloud services.
+
+NVIDIA’s CEO was careful to clarify that, “While we are adding talented employees to our ranks and licensing Groq’s IP, we are not acquiring Groq as a company.” [...] Groq is a 10-year-old startup that manufactures semiconductors specifically designed for inference. They are easily one of the hottest AI-specific semiconductors and a company that represents one of the strongest challengers to NVIDIA in inference.
+
+The company was valued at just $30 million in 2016 and was last valued at $6.9 billion this September before the $20 billion deal with NVIDIA.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>A Deal With Groq Is Lifting Nvidia's Stock as 2025 Approaches</strong><br>
+                            <a href="https://www.investopedia.com/a-deal-with-groq-is-lifting-nvidia-s-stock-as-the-end-of-2025-approaches-nvda-11876295" class="source-url" target="_blank">https://www.investopedia.com/a-deal-with-groq-is-lifting-nvidia-s-stock-as-the-end-of-2025-approaches-nvda-11876295</a>
+                        </td>
+                        <td>Investors may be cheered in part by reports that Nvidia is also acquiring some of Groq's assets, with _CNBC_ reporting a $20 billion price tag for them—it's considered Nvidia's biggest-ever acquisition—in an indication of sustained opportunity for dealmaking in the AI sector to close out the year.1 (Groq referred Investopedia to its statement and to Nvidia; Nvidia in an email said "We haven’t acquired Groq.")
+
+Related Education [...] Nvidia earlier this week announced a partnership agreement with inference chipmaker Groq.
+   The partnership will have Grog's founder and CEO Jonathan Ross and others from the company joining Nvidia, which is reportedly paying $20 billion for some Groq assets. 
+
+The trading year is almost over—but Nvidia still has some news to make. [...] Nvidia, the world's most valuable company, has been a powerful stock largely on the back of powerful growth in its business. This week's news of a deal that includes a licensing partnership, the acquisition of some key executives and, reportedly, a multibillion-dollar investment is another signal of optimism about its business.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Breaking down Nvidia's unusual $20 billion deal with Groq</strong><br>
+                            <a href="https://finance.yahoo.com/news/nvidia-acquire-groq-20-billion-214927907.html" class="source-url" target="_blank">https://finance.yahoo.com/news/nvidia-acquire-groq-20-billion-214927907.html</a>
+                        </td>
+                        <td>Skip to navigation  Skip to main content  Skip to right column   
+
+# Nvidia to acquire Groq for $20 billion in its largest deal ever, CNBC reports
+
+Senad Karaahmetovic
+
+1 min read
+
+In this article:
+
+ StockStory Top Pick
+
+  NVDA
+
+  -0.32%
+ GROQ.PVT
+
+  GOOG
+
+  -0.00%
+
+  BLK
+
+  +0.22%
+
+  SSNLF
+
+  0.00%
+
+Investing.com -- NVIDIA (NASDAQ:NVDA) has agreed to acquire Groq, a designer of high-performance artificial intelligence accelerator chips, in a $20 billion all-cash deal, CNBC reports. [...] Groq is expected to notify investors about the deal later on Wednesday, Davis said. While the acquisition includes Groq’s assets, its early-stage cloud business is excluded from the transaction.
+
+The startup was founded by former engineers behind Google’s tensor processing unit, or TPU, a chip designed to compete with Nvidia in artificial intelligence workloads. [...] If completed, the deal would represent Nvidia’s largest acquisition to date, underscoring the company’s push to strengthen its position in advanced AI hardware.
+
+Related articles
+
+Nvidia to acquire Groq for $20 billion in its largest deal ever, CNBC reports
+
+Silver's Bullish Pattern Points Higher — Keep an Eye on $52 Resistance Zone
+
+3 Strategies to Make the Most of Dow's Record-Breaking Run
+
+Terms  and Privacy Policy
+
+Privacy & Cookie Settings
+
+More Info
+
+## Recommended Stories</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia buying AI chip startup Groq for about $20 billion, ...</strong><br>
+                            <a href="https://www.cnbc.com/2025/12/24/nvidia-buying-ai-chip-startup-groq-for-about-20-billion-biggest-deal.html" class="source-url" target="_blank">https://www.cnbc.com/2025/12/24/nvidia-buying-ai-chip-startup-groq-for-about-20-billion-biggest-deal.html</a>
+                        </td>
+                        <td>Nvidia is making its largest purchase ever, acquiring assets from 9-year-old chip startup Groq for about $20 billion.
+   The company was founded by creators of Google’s tensor processing unit, or TPU, which competes with Nvidia for artificial intelligence workloads.
+   Groq, which was valued at $6.9 billion in a financing round in September, framed the deal as a “non-exclusive licensing agreement,” with its CEO and other senior leaders joining Nvidia. 
+
+In this article [...] Jonathan Ross, chief executive officer of Groq Inc., during the GenAI Summit in San Francisco, California, US, on Thursday, May 30, 2024. 
+
+David Paul | Bloomberg | Getty Images
+
+Nvidia has agreed to buy assets from Groq, a designer of high-performance artificial intelligence accelerator chips, for $20 billion in cash, according to Alex Davis, CEO of Disruptive, which led the startup’s latest financing round in September. [...] Groq said in a blog post Wednesday that it’s “entered into a non-exclusive licensing agreement with Nvidia for Groq’s inference technology,” without disclosing a price. With the deal, Groq founder and CEO Jonathan Ross along with Sunny Madra, the company’s president, and other senior leaders “will join Nvidia to help advance and scale the licensed technology,” the post said.
+
+Groq added that it will continue as an “independent company,” led by finance chief Simon Edwards as CEO.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>No, NVIDIA Isn't Acquiring Groq, But Jensen Just ... - Wccftech</strong><br>
+                            <a href="https://wccftech.com/no-nvidia-isnt-acquiring-groq-but-jensen-just-executed-a-surgical-masterclass/" class="source-url" target="_blank">https://wccftech.com/no-nvidia-isnt-acquiring-groq-but-jensen-just-executed-a-surgical-masterclass/</a>
+                        </td>
+                        <td>CNBC was the first to report on this development, claiming that NVIDIA is "buying" Groq Inc. in a mega $20 billion deal, marking the biggest acquisition by Jensen. This led to a massive wildfire in the industry, where some suggested that regulatory investigations would hinder the move, while others claimed it was the end of Groq. However, later on, Groq officially released a statement on its website, stating that it has entered into a "non-exclusive licensing agreement" with NVIDIA, granting [...] > We plan to integrate Groq’s low-latency processors into the NVIDIA AI factory architecture, extending the platform to serve an even broader range of AI inference and real-time workloads. While we are adding talented employees to our ranks and licensing Groq’s IP, we are not acquiring Groq as a company.
+>
+> - NVIDIA CEO Jensen Huang in an internal mail [...] LPUs are a creation of Groq's former CEO, Jonathan Ross, who, by the way, is joining NVIDIA after the recent arrangement. Ross is known for his work with Google's TPUs, so we can be certain that Team Green is acquiring a major asset in-house. LPUs (Language Processing Units) are Groq's solution to inference-class workloads, and the company distinguishes itself from others by being based on two core bets. The first being deterministic execution and on-die SRAM as primary weight storage. This is</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Breaking: NVIDIA just bought Groq for $20 Billion!</strong><br>
+                            <a href="https://www.youtube.com/watch?v=WOLiBYM1XFk" class="source-url" target="_blank">https://www.youtube.com/watch?v=WOLiBYM1XFk</a>
+                        </td>
+                        <td>the money maker. And he's probably thinking, okay, we need to get into the specialized chip game. And so we have the acquisition of Grock, but it's not actually an acquisition. Let's talk about that for a moment. So let's look at the announcement by Grock. Grock and Nvidia entered non-exclusive inference technology licensing agreement to accelerate AI inference at global scale and a little bit about the specifics. Grock announced it has entered into a non-exclusive licensing agreement with [...] The CEO of Grock, that is GRQ, just made a major announcement. They have been acquired for $20 billion. And I'm going to explain the air quotes in a bit, but it is effectively a 20 billion acquisition of Grock, the AI chip maker. And I have a lot of thoughts about this, especially because I'm a Grock investor. I invested about a year and a half ago. I have no inside information. I learned about the acquisition yesterday just like everybody else on Christmas Eve. Even right now, I still don't [...] couple lines from it. First of all, Nvidia paid 3x Grock's September valuation to acquire it. That is just a few months ago, three times that amount. Every AI lab was GPU dependent, creating massive concentration risk. Google broke free with TPUs for internal use. That is so incredibly important. The TPU proved it can scale pre-training, it can scale inference, and now Google has reportedly been selling the TPUs to external hyperscalers. So, they're not just using the TPUs themselves, they are</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia buying AI chip startup Groq for about $20 billion in ...</strong><br>
+                            <a href="https://www.reddit.com/r/technology/comments/1puxifg/exclusive_nvidia_buying_ai_chip_startup_groq_for/" class="source-url" target="_blank">https://www.reddit.com/r/technology/comments/1puxifg/exclusive_nvidia_buying_ai_chip_startup_groq_for/</a>
+                        </td>
+                        <td>r/technology icon
+r/technology icon
+
+Subreddit dedicated to the news and discussions about the creation and use of technology and its surrounding issues.
+
+# Exclusive: Nvidia buying AI chip startup Groq for about $20 billion in its largest acquisition on record
+
+r/technology - Exclusive: Nvidia buying AI chip startup Groq for about $20 billion in its largest acquisition on record
+
+# Related Answers Section [...] r/technology
+
+r/MapPorn
+
+These subreddits can provide more personalized advice and experiences from other Redditors.
+
+Create your account and connect with a world of communities.
+
+Anyone can view, post, and comment to this community [...] Health Concerns: Some users have expressed concerns about the health effects of 5G, which have been largely debunked by scientific consensus. "They've done this with every new generation of mobile tech."
+
+Surveillance: There are concerns about 5G being used for increased surveillance, especially with the rise of smart devices and AI. "Take AI, interesting tech, until it's used to watch every camera through that high speed network."
+
+### Subreddits for Further Discussion
+
+r/privacy
+
+r/telecom</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia's $20 billion Groq deal: Talent and technology over traditional ...</strong><br>
+                            <a href="https://www.calcalistech.com/ctechnews/article/hjyziyc7wl" class="source-url" target="_blank">https://www.calcalistech.com/ctechnews/article/hjyziyc7wl</a>
+                        </td>
+                        <td>Just three months ago, Groq raised $750 million at a $6.9 billion valuation. On Wednesday, Nvidia agreed to pay, according to some reports, $20 billion, a deal that includes non-exclusive access to Groq’s technology and the transfer of senior employees, led by founder and CEO Jonathan Ross, to Nvidia. $20 billion not to acquire the company, not to acquire its intellectual property, nor even for an exclusive use agreement. Only for permission to use the technology and recruit its people. The sum [...] # Nvidia’s $20 billion Groq deal: Talent and technology over traditional acquisition
+
+## The transaction underscores the urgency of AI competition and the need to bypass regulatory delays.
+
+Omer Kabir
+
+12:02, 25.12.25
+
+The intensity of the AI race, and the lengths companies will go to gain even a slight advantage, was made clear on Wednesday with the announcement of a deal between AI chip giant Nvidia and chip startup Groq (not to be confused with Elon Musk's Grok). [...] Nvidia, which has long dominated AI chips, faces emerging competition. Google, Amazon, OpenAI, and Meta are developing their own chips due to limited Nvidia supply, high prices, and the desire for supply chain control. If these efforts succeed, Nvidia’s market share could shrink. The Groq deal expands Nvidia’s offerings and speeds its market response, avoiding the lengthy regulatory approvals required for traditional acquisitions.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia's Groq deal underscores how the AI chip giant uses ...</strong><br>
+                            <a href="https://finance.yahoo.com/news/nvidias-groq-deal-underscores-how-the-ai-chip-giant-uses-its-massive-balance-sheet-to-maintain-dominance-183347248.html" class="source-url" target="_blank">https://finance.yahoo.com/news/nvidias-groq-deal-underscores-how-the-ai-chip-giant-uses-its-massive-balance-sheet-to-maintain-dominance-183347248.html</a>
+                        </td>
+                        <td>Cantor Fitzgerald analyst CJ Muse said Nvidia’s "acqui-hire" of Groq talent and licensing of its intellectual property showed the chipmaker “is playing both offense and defense” in the AI space. Muse said the deal would allow Nvidia to take “even greater share of the inference market.”
+
+Nvidia shares rose more than 1% Friday. [...] Nvidia this week said it struck a non-exclusive deal with Groq to license its technology and hired the startup’s founder and CEO Jonathan Ross, its president, and other employees. CNBC reported the agreement to be worth $20 billion, marking Nvidia’s largest-ever deal. (The company declined a request for comment on the figure.)
+
+Prediction Market powered by [...] Bernstein analyst Stacy Rasgon said in a note to clients Thursday that the Nvidia-Groq deal “appears strategic in nature for NVDA as they leverage their increasingly powerful balance sheet to maintain dominance in key areas.” Nvidia’s cash inflow climbed more than 30% from the previous year to $22 billion in its most recent quarter.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia buying AI chip startup Groq for about $20 billion, biggest deal</strong><br>
+                            <a href="https://www.cnbc.com/2025/12/24/nvidia-buying-ai-chip-startup-groq-for-about-20-billion-biggest-deal.html" class="source-url" target="_blank">https://www.cnbc.com/2025/12/24/nvidia-buying-ai-chip-startup-groq-for-about-20-billion-biggest-deal.html</a>
+                        </td>
+                        <td>Nvidia is making its largest purchase ever, acquiring assets from 9-year-old chip startup Groq for about $20 billion.
+   The company was founded by creators of Google’s tensor processing unit, or TPU, which competes with Nvidia for artificial intelligence workloads.
+   Groq, which was valued at $6.9 billion in a financing round in September, framed the deal as a “non-exclusive licensing agreement,” with its CEO and other senior leaders joining Nvidia. 
+
+In this article [...] In September, Nvidia said it intended to invest up to $100 billion in OpenAI, with the startup committed to deploying at least 10 gigawatts of Nvidia products. The companies have yet to announce a formal deal. That same month, Nvidia said it would invest $5 billion in Intel as part of a partnership. [...] Jonathan Ross, chief executive officer of Groq Inc., during the GenAI Summit in San Francisco, California, US, on Thursday, May 30, 2024. 
+
+David Paul | Bloomberg | Getty Images
+
+Nvidia has agreed to buy assets from Groq, a designer of high-performance artificial intelligence accelerator chips, for $20 billion in cash, according to Alex Davis, CEO of Disruptive, which led the startup’s latest financing round in September.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>A Deal With Groq Is Lifting Nvidia's Stock as 2025 Approaches</strong><br>
+                            <a href="https://www.investopedia.com/a-deal-with-groq-is-lifting-nvidia-s-stock-as-the-end-of-2025-approaches-nvda-11876295" class="source-url" target="_blank">https://www.investopedia.com/a-deal-with-groq-is-lifting-nvidia-s-stock-as-the-end-of-2025-approaches-nvda-11876295</a>
+                        </td>
+                        <td>Nvidia earlier this week announced a partnership agreement with inference chipmaker Groq.
+   The partnership will have Grog's founder and CEO Jonathan Ross and others from the company joining Nvidia, which is reportedly paying $20 billion for some Groq assets. 
+
+The trading year is almost over—but Nvidia still has some news to make. [...] Investors may be cheered in part by reports that Nvidia is also acquiring some of Groq's assets, with _CNBC_ reporting a $20 billion price tag for them—it's considered Nvidia's biggest-ever acquisition—in an indication of sustained opportunity for dealmaking in the AI sector to close out the year.1 (Groq referred Investopedia to its statement and to Nvidia; Nvidia in an email said "We haven’t acquired Groq.")
+
+Related Education [...] Nvidia, the world's most valuable company, has been a powerful stock largely on the back of powerful growth in its business. This week's news of a deal that includes a licensing partnership, the acquisition of some key executives and, reportedly, a multibillion-dollar investment is another signal of optimism about its business.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia buys AI chip startup Groq's assets for $20 billion in the ...</strong><br>
+                            <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-buys-ai-chip-startup-groqs-assets-for-usd20-billion-in-the-companys-biggest-deal-ever-transaction-includes-acquihires-of-key-groq-employees-including-ceo" class="source-url" target="_blank">https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-buys-ai-chip-startup-groqs-assets-for-usd20-billion-in-the-companys-biggest-deal-ever-transaction-includes-acquihires-of-key-groq-employees-including-ceo</a>
+                        </td>
+                        <td>Nvidia, the largest GPU manufacturer in the world and the linchpin of the AI data center buildout, has entered into a non-exclusive licensing agreement with AI chip rival Groq to use the company's intellectual property. The deal is valued at $20 billion and includes acquihires of key employees within the firm who will now be joining Nvidia. The firm spent $7 billion for Israeli chip company Mellanox in 2019, so the record has now been toppled. [...] “We plan to integrate Groq’s low-latency processors into the NVIDIA AI factory architecture, extending the platform to serve an even broader range of AI inference and real-time workloads... While we are adding talented employees to our ranks and licensing Groq’s IP, we are not acquiring Groq as a company.” — Jensen Huang, Nvidia CEO (as per CNBC). [...] Nvidia is the largest benefactor of the AI boom because it supplies most of the world's data centers and has deals with essentially every AI constituent. Groq has accused Nvidia in the past of predatory tactics over exclusivity, claiming that potential customers remain fearful of Nvidia's inventory allotment if they're found talking to competitors, such as Groq, historically. Those concerns seem to have been laid to bed with the deal.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia Partners with AI Startup Groq, Avoiding Merger Regulations</strong><br>
+                            <a href="https://www.businesskorea.co.kr/news/articleView.html?idxno=259735" class="source-url" target="_blank">https://www.businesskorea.co.kr/news/articleView.html?idxno=259735</a>
+                        </td>
+                        <td>CNBC reported, citing sources close to Groq, that Nvidia agreed to acquire the company’s technology and other assets for $20 billion in cash (about 29 trillion won). Reuters described Groq as one of several startups that do not use high-bandwidth memory (HBM) chips. Accordingly, it noted that the company is relatively free from global memory semiconductor supply shortages. [...] U.S. semiconductor giant Nvidia has recently entered into a technology licensing agreement with artificial intelligence (AI) chip development startup Groq, with analysts suggesting this represents a strategy to circumvent antitrust regulations.
+
+Groq is a hardware company that produces specialized AI inference chips known for their exceptional speed in running large language models. The company has nothing to do with "Grok," an AI chatbot developed by Elon Musk's company, xAI. [...] Groq announced on its blog on Dec. 24, “We have entered into a non-exclusive licensing agreement with Nvidia for inference technology,” and revealed that “as part of this agreement, Groq founder Jonathan Ross and President Sunny Madra, along with team members, will join Nvidia to support the development and expansion of licensed technology.”</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>AI: Nvidia strikes a big AI Acqui-hire deal with Groq. RTZ #947</strong><br>
+                            <a href="https://michaelparekh.substack.com/p/ai-nvidia-strikes-a-big-ai-acqui" class="source-url" target="_blank">https://michaelparekh.substack.com/p/ai-nvidia-strikes-a-big-ai-acqui</a>
+                        </td>
+                        <td>> “Despite billions of dollars in venture funding, Nvidia challengers including Groq have struggled to break the company’s tight grip on the market for advanced AI chips. Nvidia chips have maintained a lead in performance and are widely available on major cloud services, which have been reluctant to offer alternatives from such startups.”
+> [...] > “Nvidia stunned Silicon Valley on Wednesday by agreeing to pay about $20 billion to license technology from Groq, one of the best-funded startups trying to challenge Nvidia’s dominance in chips for powering AI applications, known as inference computing, according to a person involved in the deal. Nvidia is also hiring Groq’s founders and other leaders, according to the startup, which didn’t disclose the financial details.” [...] > “The licensing-and-hiring deal Nvidia struck with Groq has a similar structure to deals Microsoft, Amazon and Google used to hire founders of AI startups without officially acquiring the firms. Google’s roughly $3 billion deal with Character.ai last year nevertheless triggered a review from the U.S. Department of Justice, but no action has been taken. Although Nvidia isn’t currently facing an antitrust review in the U.S., it has been careful to avoid describing itself as holding an outsized</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>xAI (company) - Wikipedia</strong><br>
+                            <a href="https://en.wikipedia.org/wiki/XAI_(company)" class="source-url" target="_blank">https://en.wikipedia.org/wiki/XAI_(company)</a>
+                        </td>
+                        <td>X.AI Corp., doing business as xAI, is an American company working in the area of artificial intelligence (AI), social media and technology. Founded by Elon Musk in 2023, the company's flagship products are the generative AI chatbot named Grok "Grok (chatbot)") and the social media platform X (formerly known as Twitter), the latter of which they acquired in March 2025.
+
+## History
+
+[edit&action=edit&section=1 "Edit section: History")] [...] As of August 2024( Musk was diverting a large number of Nvidia chips that had been ordered by Tesla, Inc. to X and xAI. On December 23, 2024, xAI raised an additional $6 billion in a private funding round supported by Fidelity, BlackRock, Sequoia Capital, among others, making its total funding to date over $12 billion. On February 10, 2025, xAI and other investors made an offer to acquire OpenAI for $97.4 billion. On March 17, 2025, xAI acquired Hotshot, a startup working on AI-powered video [...] | Trade name | xAI |
+| Company type | Private |
+| Industry | Artificial intelligence Social media Technology |
+| Founded | March 9, 2023; 2 years ago (2023-03-09) |
+| Founder | Elon Musk |
+| Headquarters | Stanford Research Park, Palo Alto, California , United States |
+| Key people |  Elon Musk (CEO) Anthony Armstrong (CFO) |
+| Products |  Grok "Grok (chatbot)")  X (formerly known as Twitter)  Aurora "Aurora (text-to-image model)")  Grokipedia  Grok Code Fast 1  PromptIDE |</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia's $20 billion Groq deal: Talent and technology over traditional ...</strong><br>
+                            <a href="https://www.calcalistech.com/ctechnews/article/hjyziyc7wl" class="source-url" target="_blank">https://www.calcalistech.com/ctechnews/article/hjyziyc7wl</a>
+                        </td>
+                        <td>Nvidia CEO Jensen Huang told employees that the company plans “to integrate Groq’s low-latency processors into the NVIDIA AI factory architecture, extending the platform to serve an even broader range of AI inference and real-time workloads.”
+
+Huang added that, “While we are adding talented employees to our ranks and licensing Groq’s IP, we are not acquiring Groq as a company.”
+
+Groq, for its part, will continue operating independently, with Simon Edwards taking over Ross’s role. [...] Nvidia, which has long dominated AI chips, faces emerging competition. Google, Amazon, OpenAI, and Meta are developing their own chips due to limited Nvidia supply, high prices, and the desire for supply chain control. If these efforts succeed, Nvidia’s market share could shrink. The Groq deal expands Nvidia’s offerings and speeds its market response, avoiding the lengthy regulatory approvals required for traditional acquisitions. [...] Just three months ago, Groq raised $750 million at a $6.9 billion valuation. On Wednesday, Nvidia agreed to pay, according to some reports, $20 billion, a deal that includes non-exclusive access to Groq’s technology and the transfer of senior employees, led by founder and CEO Jonathan Ross, to Nvidia. $20 billion not to acquire the company, not to acquire its intellectual property, nor even for an exclusive use agreement. Only for permission to use the technology and recruit its people. The sum</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia's Groq deal underscores how the AI chip giant uses its ...</strong><br>
+                            <a href="https://finance.yahoo.com/news/nvidias-groq-deal-underscores-how-the-ai-chip-giant-uses-its-massive-balance-sheet-to-maintain-dominance-183347248.html" class="source-url" target="_blank">https://finance.yahoo.com/news/nvidias-groq-deal-underscores-how-the-ai-chip-giant-uses-its-massive-balance-sheet-to-maintain-dominance-183347248.html</a>
+                        </td>
+                        <td>Nvidia’s (NVDA) licensing deal with chip startup Groq (GROQ.PVT) shows how the tech giant is leveraging its massive cash pile to sustain its preeminence in the AI market. [...] Nvidia this week said it struck a non-exclusive deal with Groq to license its technology and hired the startup’s founder and CEO Jonathan Ross, its president, and other employees. CNBC reported the agreement to be worth $20 billion, marking Nvidia’s largest-ever deal. (The company declined a request for comment on the figure.)
+
+Prediction Market powered by [...] Cantor Fitzgerald analyst CJ Muse said Nvidia’s "acqui-hire" of Groq talent and licensing of its intellectual property showed the chipmaker “is playing both offense and defense” in the AI space. Muse said the deal would allow Nvidia to take “even greater share of the inference market.”
+
+Nvidia shares rose more than 1% Friday.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia, joining Big Tech deal spree, to license Groq technology, hire ...</strong><br>
+                            <a href="https://www.reuters.com/business/nvidia-buy-ai-chip-startup-groq-about-20-billion-cnbc-reports-2025-12-24/" class="source-url" target="_blank">https://www.reuters.com/business/nvidia-buy-ai-chip-startup-groq-about-20-billion-cnbc-reports-2025-12-24/</a>
+                        </td>
+                        <td>Groq did not disclose financial details of the deal. CNBC reported that Nvidia had agreed to acquire Groq for $20 billion in cash, but neither Nvidia nor Groq commented on the report. Groq said in its blog post that it will continue to operate as an independent company with Simon Edwards as CEO and that its cloud business will continue operating. [...] Nvidia has agreed to a "non-exclusive" license to Groq's technology, Groq said. It said its founder Jonathan Ross, who helped Google start its AI chip program, as well as Groq President Sunny Madra and other members of its engineering team, will join Nvidia.
+
+Advertisement · Scroll to continue
+
+A person close to Nvidia confirmed the licensing agreement. [...] Groq's primary rival in the approach is Cerebras Systems, which Reuters this month reported plans to go public as soon as next year. Groq and Cerebras have signed large deals in the Middle East.
+
+Nvidia's Huang spent much of his biggest keynote speech of 2025 arguing that Nvidia would be able to maintain its lead as AI markets shift from training to inference.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>NVIDIA “Acquires” Groq - Brownstone Research</strong><br>
+                            <a href="https://www.brownstoneresearch.com/bleeding-edge/nvidia-acquires-groq/" class="source-url" target="_blank">https://www.brownstoneresearch.com/bleeding-edge/nvidia-acquires-groq/</a>
+                        </td>
+                        <td>Part of the deal is that Groq’s CEO and other senior leaders will join NVIDIA to manage the assets that NVIDIA acquired, leaving behind a shell of an “independent company” to carry on primarily managing Groq Cloud services.
+
+NVIDIA’s CEO was careful to clarify that, “While we are adding talented employees to our ranks and licensing Groq’s IP, we are not acquiring Groq as a company.” [...] Groq is a 10-year-old startup that manufactures semiconductors specifically designed for inference. They are easily one of the hottest AI-specific semiconductors and a company that represents one of the strongest challengers to NVIDIA in inference.
+
+The company was valued at just $30 million in 2016 and was last valued at $6.9 billion this September before the $20 billion deal with NVIDIA. [...] The Bleeding Edge
+
+14 min read
+
+# NVIDIA “Acquires” Groq
+
+NVIDIA’s new licensing deal with Groq may not be a formal acquisition, but in terms of antitrust regulations, it certainly is shady…
+
+Written by
+
+Jeff Brown
+
+Published on
+
+Dec 26, 2025
+
+Managing Editor’s Note: Happy Holidays to all from the Brownstone Research team!
+
+We hope you’ve had fun reading through Optimus’ adventures over the past few days. We certainly enjoyed handing things over to Grok for a little Christmas fun.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>NVIDIA (NVDA) Poised for Major Acquisition of AI Chipmaker Groq</strong><br>
+                            <a href="https://www.gurufocus.com/news/4086935/nvidia-nvda-poised-for-major-acquisition-of-ai-chipmaker-groq" class="source-url" target="_blank">https://www.gurufocus.com/news/4086935/nvidia-nvda-poised-for-major-acquisition-of-ai-chipmaker-groq</a>
+                        </td>
+                        <td>NVIDIA (NVDA, Financial) is reportedly ready to make its largest acquisition to date by acquiring AI chipmaker Groq for approximately $20 billion. This deal could significantly impact the AI chip industry's landscape. Groq, founded in 2016, specializes in high-performance AI acceleration chips, widely used for large language model inference computations. The company plans to expand by building over ten new data centers by 2025. [...] The acquisition will encompass Groq's core assets, excluding its Groq Cloud business. Groq recently completed a $750 million financing round with a valuation of $6.9 billion. Key investors included BlackRock and Samsung. NVIDIA's financials as of October show $60.6 billion in cash and short-term investments, enabling large-scale acquisitions. [...] Though NVIDIA shares closed at $188.05, a dip of 0.3%, news of the potential acquisition has affected the stock's after-hours performance. Despite earlier denials of sale intentions, Groq's CEO Jonathan Ross acknowledged the sale's swift progression, initiated by NVIDIA.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia's $20 Billion Acquisition Of AI Chip Innovator Groq ...</strong><br>
+                            <a href="https://shiningpens.com/nvidias-20-billion-acquisition-of-ai-chip-innovator-groq-signals-major-shift-in-artificial-intelligence-hardware-market/" class="source-url" target="_blank">https://shiningpens.com/nvidias-20-billion-acquisition-of-ai-chip-innovator-groq-signals-major-shift-in-artificial-intelligence-hardware-market/</a>
+                        </td>
+                        <td>Nvidia’s $20 billion acquisition of Groq symbolizes more than just another corporate deal—it’s a defining moment in the evolution of AI hardware. As demand for specialized chips accelerates, Nvidia’s strategy to integrate innovative architectures like Groq’s TSP demonstrates its commitment to staying ahead of both technological and market trends. The merger enhances Nvidia’s ability to deliver powerful, efficient, and scalable computing solutions worldwide. [...] Nvidia’s acquisition of Groq for $20 billion marks one of the most significant deals in the artificial intelligence hardware industry to date. The move consolidates Nvidia’s leadership in AI computing while absorbing one of its most innovative challengers in the semiconductor space. As the global demand for AI chips skyrockets, this acquisition underscores how critical advanced processors have become for powering large language models, autonomous systems, and next-generation cloud computing. [...] The $20 billion deal, which reportedly includes both cash and stock components, reflects Nvidia’s confidence in the long-term demand for AI acceleration technology. Analysts estimate that the AI chip market could exceed $400 billion by 2030, positioning Nvidia to dominate both the hardware and software ecosystems that underpin advanced machine learning.
+
+## Who Is Groq and Why It Mattered to Nvidia</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia's $20B Groq Acquisition: A Strategic Lock-In of the AI ...</strong><br>
+                            <a href="https://www.ainvest.com/news/nvidia-20b-groq-acquisition-strategic-lock-ai-inference-era-2512/" class="source-url" target="_blank">https://www.ainvest.com/news/nvidia-20b-groq-acquisition-strategic-lock-ai-inference-era-2512/</a>
+                        </td>
+                        <td>- The deal integrates Groq's LPU technology into Nvidia's Rubin platform, offering 10x lower latency and enhancing vertical integration with CUDA's 70-95% market share.
+
+- By addressing inference gaps and leveraging its $60B cash reserves,
+
+Nvidia
+
+solidifies its competitive moat against rivals like
+
+AMD
+
+and
+
+Intel
+
+.
+
+Nvidia's $20 billion acquisition of Groq, announced in late 2025, marks a pivotal moment in the AI industry's evolution. By acquiring the high-performance AI chip startup, [...] Nvidia's dominance in AI chips is underpinned by its CUDA software ecosystem, which has been cultivated over nearly two decades. With 4+ million developers and 3,000+ optimized applications, CUDA has become a de facto standard in AI development, creating high switching costs for enterprises
+
+according to industry analysis
+
+. According to Mizuho Securities, this ecosystem has enabled Nvidia to capture 70-95% of the AI chip market
+
+according to financial reports [...] Nvidia's acquisition of Groq is not merely a financial transaction but a strategic lock-in of the AI inference era. By integrating Groq's LPU into its Rubin platform and CUDA ecosystem, Nvidia strengthens its vertical integration, creating a moat that rivals struggle to replicate. For investors, this move signals a long-term commitment to dominating AI infrastructure, with the Rubin roadmap and Blackwell Ultra architecture positioning the company to capitalize on the $254.98 billion inference</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia's Groq deal underscores how the AI chip giant uses ...</strong><br>
+                            <a href="https://finance.yahoo.com/news/nvidias-groq-deal-underscores-how-the-ai-chip-giant-uses-its-massive-balance-sheet-to-maintain-dominance-183347248.html" class="source-url" target="_blank">https://finance.yahoo.com/news/nvidias-groq-deal-underscores-how-the-ai-chip-giant-uses-its-massive-balance-sheet-to-maintain-dominance-183347248.html</a>
+                        </td>
+                        <td>Nvidia’s (NVDA) licensing deal with chip startup Groq (GROQ.PVT) shows how the tech giant is leveraging its massive cash pile to sustain its preeminence in the AI market. [...] Cantor Fitzgerald analyst CJ Muse said Nvidia’s "acqui-hire" of Groq talent and licensing of its intellectual property showed the chipmaker “is playing both offense and defense” in the AI space. Muse said the deal would allow Nvidia to take “even greater share of the inference market.”
+
+Nvidia shares rose more than 1% Friday. [...] While Nvidia easily dominates the chip market for AI training, some analysts argue that Nvidia could soon see greater competition in the inference space. That’s because custom chips like Google's (GOOG) TPUs (tensor processing units) — and arguably Groq’s chips called LPUs (language processing units) — may be better suited for certain tasks. LPUs, for instance, are faster and more energy efficient when used for certain models, utilizing a type of memory technology called SRAM within the chips.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>NVIDIA's $20 Billion Groq Deal: How the Chip Giant ...</strong><br>
+                            <a href="https://kbssidhu.substack.com/p/nvidias-20-billion-groq-deal-how" class="source-url" target="_blank">https://kbssidhu.substack.com/p/nvidias-20-billion-groq-deal-how</a>
+                        </td>
+                        <td>Third, major NVIDIA customers are accelerating custom silicon development. Google’s TPU, Amazon’s Trainium and Inferentia, Microsoft’s Maia, and Meta’s MTIA represent existential threats to NVIDIA’s long-term dominance. As these hyperscalers deploy proprietary chips across their infrastructure, they reduce dependence on NVIDIA’s ecosystem while improving unit economics. The Groq acquisition accelerates this dynamic by suggesting NVIDIA views its market dominance as threatened enough to justify [...] On Christmas Eve 2025, NVIDIA Corp. announced a non-exclusive licensing agreement with AI chip startup Groq valued at $20 billion—the semiconductor giant’s largest deal on record. While officially positioned as a “licensing agreement,” the arrangement effectively functions as an acquisition: Groq’s founder and CEO Jonathan Ross, President Sunny Madra, and key engineering talent are joining NVIDIA, while the company continues operating independently under new leadership. The $20 billion [...] For AI chip startups specifically, the Groq outcome sends a clear message: maintaining sustainable independence against NVIDIA’s installed base, CUDA ecosystem, and now-expanding architectural portfolio requires truly extraordinary technical differentiation and execution. Companies like Cerebras, Sambanova, d-Matrix, and Tenstorrent now face intensified questions about paths to scale and sustainable competitive positioning. The consolidation dynamic creates a self-reinforcing cycle where</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia Licensing Deal Poaches Top Engineers from Groq AI Chip ...</strong><br>
+                            <a href="https://mtsoln.com/blog/ai-news-727/nvidia-to-poach-top-staff-from-ai-chip-start-up-groq-in-licensing-deal-4933" class="source-url" target="_blank">https://mtsoln.com/blog/ai-news-727/nvidia-to-poach-top-staff-from-ai-chip-start-up-groq-in-licensing-deal-4933</a>
+                        </td>
+                        <td>Nvidia's licensing deal with Groq represents a significant step in the ongoing race for supremacy in AI chip innovation. By acquiring top talent and IP from Groq, Nvidia is not just enhancing its own capabilities but also shaping the broader landscape of AI technology as firms strive to outpace one another in a rapidly evolving market.
+
+## References [...] The effects of this deal could reverberate throughout the industry as both established firms and fledgling start-ups adjust to shifts in talent and technology. Nvidia's commitment to expanding its engineering talent pool may lead to breakthroughs in AI chip functionality, accelerating advancements in computing power necessary for powering AI applications. [...] Nvidia, recognized as the world's most valuable semiconductor company, remains at the forefront of AI and machine learning development. The significant investment in acquiring high-caliber talent reflects a broader industry trend where companies are vying for expertise in AI capabilities, which are increasingly becoming fundamental across various sectors.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Tech M&A Outlook 2025: AI, Chips, and Hardware - ARC Group</strong><br>
+                            <a href="https://arc-group.com/tech-ma-outlook-2025/" class="source-url" target="_blank">https://arc-group.com/tech-ma-outlook-2025/</a>
+                        </td>
+                        <td>Generative AI and AI Chipslead the high competition zone with major M&A deals like SoftBank’s $6.5B purchase of Ampere and Databricks’ $1.3B acquisition of MosaicML, highlighting strong investor demand and high return potential. In Generative AI, companies are acquiring foundational model builders to gain proprietary models, talent, and infrastructure. In the chip space, M&A reflects a push for vertical integration and control over AI computing as demand for custom hardware grows. [...] The transaction is expected to close in Q4 2025. Qualcomm’s all cash offer of 183 pence per share represents a 96% premium to Alphawave’s closing price on March 31 and was accepted by a majority of institutional shareholders by mid-June. This move is part of a broader trend where chip companies are racing to buy specialized technology, such as Synopsys’s acquisition of Ansys, and Nvidia’s sweep of chiplet startups, each fighting to get ahead in the AI hardware race. [...] AMD made a series of bold acquisitions in 2024 and 2025 to strengthen its AI and data center ecosystem. These moves position AMD as a full-stack rival to Nvidia. These moves target gaps in infrastructure, software, and chip-level innovation. Each acquisition addresses a critical gap:</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia's $20B Groq Deal: Strategy, LPU Tech & Antitrust | IntuitionLabs</strong><br>
+                            <a href="https://intuitionlabs.ai/articles/nvidia-groq-ai-inference-deal" class="source-url" target="_blank">https://intuitionlabs.ai/articles/nvidia-groq-ai-inference-deal</a>
+                        </td>
+                        <td>Thus, by acquiring Groq’s assets, Nvidia gains a new architectural approach to augment its GPU-based platforms. Nvidia CEO Jensen Huang has indicated that Nvidia will “integrate Groq’s low-latency processors into the NVIDIA AI Factory architecture to … support a wider range of AI inference and real-time applications” (( "Highlights: In an email to employees,,range of AI inference and")). In practical terms, Nvidia could incorporate LPU elements (e.g. compiler techniques, chip topologies) into [...] the premium paid relative to Groq’s recent funding rounds and Nvidia’s own balance sheet, including implications for investors. We compare this deal to historical precedents (e.g. Nvidia’s Mellanox buy, AMD’s Xilinx acquisition, Microsoft-Inflection) to derive lessons. Case studies of similar “asset acquisitions” illustrate the risks and outcomes for different stakeholders. Finally, we discuss the broader implications for the AI hardware industry and speculate on future directions: from [...] Assets and IP License: Nvidia agreed to buy “most” of Groq’s AI chip assets for $20 billion in cash (( "Highlights: Nvidia has announced its largest,workloads compared to traditional GPUs")) (( "Highlights: Call it what you want,,agreement” without disclosing the price")). In parallel, Groq granted Nvidia a non-exclusive license to its inference technology (the LPU designs). This license means Groq could theoretically license the technology to others, but Nvidia’s exclusive backing and</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Why Nvidia Needs Groq To Win The War Against Google's TPUs</strong><br>
+                            <a href="https://seekingalpha.com/article/4855896-why-nvidia-needs-groq-to-win-the-war-against-google-tpu" class="source-url" target="_blank">https://seekingalpha.com/article/4855896-why-nvidia-needs-groq-to-win-the-war-against-google-tpu</a>
+                        </td>
+                        <td>Nvidia Corporation is acquiring Groq via a licensing agreement, targeting Groq's compiler expertise rather than just its AI chip speed.
+ Groq’s novel compiler and polyhedral scheduling could help NVDA solve critical scaling issues, potentially matching Alphabet’s TPU cluster efficiency.
+ Integrating Groq’s software may reduce NVDA’s control logic overhead, enhancing GPU utilization and defending margins against AMD and Alphabet. [...] Nvidia Corporation (NVDA) just announced the thinly veiled acquisition (it's formally a licensing agreement) of Groq. Groq is famous for its AI-focused chips that utilize relatively small amounts of high-speed SRAM. The consensus takeaway appears
+
+This article was written by
+
+Bram de Haas
+
+20.38KFollowers</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>The Untold Story of Nvidia's AI Hardware Takeover</strong><br>
+                            <a href="https://future-bridge.us/the-rise-of-nvidia-how-ai-hardware-became-the-hottest-sector-in-us-semiconductors/" class="source-url" target="_blank">https://future-bridge.us/the-rise-of-nvidia-how-ai-hardware-became-the-hottest-sector-in-us-semiconductors/</a>
+                        </td>
+                        <td>Nvidia wished to completely dominate the high-end of the AI hardware market. So, they did not just sell individual chips; they sold entire systems. The DGX line stands to be a perfect example. It is a complete AI supercomputer in a box. It comes with all the hardware/software you require. Moreover, they handle all the complex tasks of connecting several GPUs. They make use of their special NVLink technology to achieve this. [...] As we conclude our dive into Nvidia’s ascension, it is apparent that the company is not merely a chipmaker. It is the foundation of the modern era’s AI revolution. The strategic vision of the company is evident. Its vertical integration with the DGX is intelligent. Moreover, its dependence on the CUDA ecosystem has built an unassailable niche in the AI hardware space. Through geopolitical turmoil, brutal competition from hyperscalers, and the built-in risk of a brittle supply chain, Nvidia has [...] ##### The Inevitable Rise of Hyperscaler In-house Silicon
+
+For a long time, major cloud providers were Nvidia’s biggest customers. Companies like Google, Amazon, and Microsoft bought thousands of their chips. They used these chips to power their own AI services. But things are changing. These huge companies now make their own AI chips:
+
+ Google has its Tensor Processing Units (TPUs),
+ Amazon has Inferentia and Trainium,
+ Microsoft has Maia 100, and more.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>NVIDIA's AI chip dominance faces new competition from AMD, Intel ...</strong><br>
+                            <a href="https://www.linkedin.com/posts/doanhchau_openai-hands-amd-a-big-win-in-ai-chip-race-activity-7382200115136176128-UCGg" class="source-url" target="_blank">https://www.linkedin.com/posts/doanhchau_openai-hands-amd-a-big-win-in-ai-chip-race-activity-7382200115136176128-UCGg</a>
+                        </td>
+                        <td>Competition is healthy, especially in AI. For too long, NVIDIA has dominated the AI chip market, but the landscape is shifting fast. AMD, Intel, and hyperscalers like Google and AWS are entering the race with new architectures and custom silicon. This isn’t bad news. It’s great news. Competition drives innovation, lowers costs, and improves efficiency. AMD’s challenge to NVIDIA will make both stronger and ultimately benefit developers, enterprises, and consumers alike. The AI revolution needs [...] NVIDIA, not merely with NVIDIA. [...] more than one engine. It needs an ecosystem.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>The AI Chip Market Explosion: Key Stats on Nvidia, AMD, and Intel's ...</strong><br>
+                            <a href="https://patentpc.com/blog/the-ai-chip-market-explosion-key-stats-on-nvidia-amd-and-intels-ai-dominance" class="source-url" target="_blank">https://patentpc.com/blog/the-ai-chip-market-explosion-key-stats-on-nvidia-amd-and-intels-ai-dominance</a>
+                        </td>
+                        <td>CUDA is Nvidia’s software framework for AI and machine learning, and it has become the industry standard. With over 4 million developers using it, Nvidia enjoys a huge advantage over AMD and Intel.
+
+For AI engineers and companies, this means Nvidia’s ecosystem is the most mature and widely supported. If you’re developing AI models, choosing CUDA ensures access to extensive documentation, libraries, and community support. [...] If you’re considering investing in AI chip companies, understanding their market positioning and growth potential is essential. While Nvidia remains the leader, AMD and Intel are expanding their AI capabilities, which could present new investment opportunities.
+
+## AMD’s AI GPU market share is estimated to be less than 10%, but it is gaining traction [...] For businesses investing in AI, this means Nvidia is often the safest choice. Its hardware and software ecosystem is mature, widely supported, and highly optimized. However, this also means prices are high due to strong demand. If you’re looking for alternatives, keep an eye on AMD and Intel, which are making strides in AI chip development.
+
+## The AI chip market was valued at $20 billion in 2020 and is projected to exceed $300 billion by 2030</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>AI Chip News: What's New With AI Processors</strong><br>
+                            <a href="https://copyright-certificate.byu.edu/news/ai-chip-news-whats-new-1761250188552" class="source-url" target="_blank">https://copyright-certificate.byu.edu/news/ai-chip-news-whats-new-1761250188552</a>
+                        </td>
+                        <td>efficiency, a critical factor for both consumer devices and large-scale data centers. The battleground for AI chip supremacy is dynamic, with established giants like NVIDIA, Intel, and AMD fiercely competing with tech behemoths developing their own custom silicon, and agile startups introducing revolutionary concepts. This intense competition is a catalyst for rapid advancement, ultimately benefiting users with more powerful and accessible AI tools. The ripple effects are undeniable, [...] its A-series and M-series chips, bringing powerful AI capabilities to its ecosystem of devices. The competition isn't just about hardware; it's also about software, ecosystem, and total cost of ownership. Companies that can offer a complete solution, from the chip to the development tools and cloud services, are likely to gain a significant advantage. This ongoing battle for market share is fueling rapid innovation and making AI hardware more accessible and powerful than ever before. [...] often competing directly with NVIDIA in the high-performance computing and data center markets. Beyond the traditional chipmakers, we have the hyperscalers – companies like Google, Amazon (AWS), and Microsoft Azure – who are designing their own custom AI chips. Google's TPUs (Tensor Processing Units) are a prime example, optimized specifically for Google's TensorFlow framework and its vast AI operations. Amazon's Inferentia and Trainium chips are designed to provide cost-effective AI inference</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia vs. AMD vs. Intel: Comparing AI Chip Sales - SemiWiki</strong><br>
+                            <a href="https://semiwiki.com/forum/threads/nvidia-vs-amd-vs-intel-comparing-ai-chip-sales.18693/" class="source-url" target="_blank">https://semiwiki.com/forum/threads/nvidia-vs-amd-vs-intel-comparing-ai-chip-sales.18693/</a>
+                        </td>
+                        <td>## Competition Between Nvidia vs. AMD vs. Intel​ [...] >
+> Click to expand... [...] >
+> Click to expand...</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>AI Chips & Accelerators - MLQ.ai</strong><br>
+                            <a href="https://mlq.ai/research/ai-chips/" class="source-url" target="_blank">https://mlq.ai/research/ai-chips/</a>
+                        </td>
+                        <td>Yet NVIDIA's moat isn't the hardware—it's CUDA, a software ecosystem built over nearly 20 years with 4+ million developers, 3,000+ optimized applications, and deep integration into every major AI framework.4
+
+AMD offers competitive chips (MI300X with 192GB memory vs. H100's 80GB) at lower prices, but the software gap means real-world training performance still favors NVIDIA on many workloads—not because the hardware is dramatically better, but because CUDA's software ecosystem is more mature. [...] AMD has transformed from irrelevant to competitive in AI chips, driven by CEO Lisa Su's strategic pivot. The MI300X offers genuinely superior specs in key metrics: 192GB memory (2.4x H100), 5.3 TB/s bandwidth (1.8x H100).11 Microsoft Azure deploys MI300X at scale via ND MI300X v5 VMs powering Azure OpenAI; Microsoft EVP Scott Guthrie called it "the most cost-effective GPU out there."14 [...] Taiwan Semiconductor manufactures the vast majority of the world's most advanced AI chips. NVIDIA, AMD, Apple, Amazon, Google, and Microsoft all depend on TSMC's 3nm/4nm/5nm processes. The company holds ~67% of global foundry revenue with net profit margins above 40%—far above industry average.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Top 20+ AI Chip Makers: NVIDIA & Its Competitors in 2026</strong><br>
+                            <a href="https://research.aimultiple.com/ai-chip-makers/" class="source-url" target="_blank">https://research.aimultiple.com/ai-chip-makers/</a>
+                        </td>
+                        <td>While NVIDIA dominates the AI “training” market, competition is heating up in “inference” – the deployment of AI models for real-world tasks. Companies like AMD and numerous startups, including Untether AI and Groq, are developing chips that aim to provide more cost-effective inference solutions, particularly focusing on lower power consumption. [...] Intel is the most significant player in the CPU market and has a long history of semiconductor development. Unlike NVIDIA and AMD, Intel uses its own foundry to build its chips.
+
+Gaudi3 is the latest AI accelerator processor from Intel. 21  However, Intel’s sales guidance for Gaudi3 was ~$500M for 2024, which is significantly lower compared to the billions that AMD is projecting to earn in 2024. [...] AMD launched MI300 for AI training workloads in June 2023 and is competing with NVIDIA for market share. There are startups, research institutes, enterprises, and tech giants that have adopted AMD hardware in 2023 since Nvidia AI hardware has been difficult to procure due to rapidly increasing demand with the rise of generative AI triggered by the launch of ChatGPT.10 11 12 13</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>AI Chip Market Soars: NVIDIA Leads Race - Design News</strong><br>
+                            <a href="https://www.designnews.com/electronics/processor-market-faces-challenges-meeting-data-center-needs" class="source-url" target="_blank">https://www.designnews.com/electronics/processor-market-faces-challenges-meeting-data-center-needs</a>
+                        </td>
+                        <td>Nvidia is also partnering with rival, Intel, to jointly develop multiple generations of custom datacenter and PC products that accelerate applications and workloads across hyperscale, enterprise and consumer markets. The companies will focus on seamlessly connecting NVIDIA and Intel architectures using NVIDIA NVLink, thus integrating NVIDIA’s AI and accelerated computing with Intel’s leading CPU technologies and x86 ecosystem to deliver solutions for customers. Under the partnership, NVIDIA [...] will invest $5 billion in Intel’s common stock at a purchase price of $23.28 per share. [...] To leverage strengths and help maintain market position, suppliers are increasingly partnering.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>AI Chip Stocks Comparison: Nvidia (NVDA) Stock, AMD Stock, Intel ...</strong><br>
+                            <a href="https://www.markets.com/research/ai-chip-stocks-comparison-nvidia-nvda-stock-amd-stock-intel-stock" class="source-url" target="_blank">https://www.markets.com/research/ai-chip-stocks-comparison-nvidia-nvda-stock-amd-stock-intel-stock</a>
+                        </td>
+                        <td>LoginSign Up
+
+## AI Chip Stocks Comparison: Nvidia (NVDA) Stock, AMD Stock, Intel Stock
+
+6 min read
+
+Table of Contents
+
+ 1. Overview of Nvidia (NVDA) Stock
+ 2. Overview of AMD Stock
+ 3. Overview of Intel Stock
+ 4. AI Chip Stocks Comparative Analysis
+ 5. Conclusion [...] provided for informative purposes only and should not be construed to be investment advice. Trading cryptocurrency CFDs and spread bets is restricted for all UK retail clients. [...] Risk Warning: this article represents only the author’s views and is for reference only. It does not constitute investment advice or financial guidance, nor does it represent the stance of the Markets.com platform.When considering shares, indices, forex (foreign exchange) and commodities for trading and price predictions, remember that trading CFDs involves a significant degree of risk and could result in capital loss.Past performance is not indicative of any future results. This information is</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Top Technology Predictions Strategic Intelligence Report 2026: AI ...</strong><br>
+                            <a href="https://finance.yahoo.com/news/top-technology-predictions-strategic-intelligence-113100325.html" class="source-url" target="_blank">https://finance.yahoo.com/news/top-technology-predictions-strategic-intelligence-113100325.html</a>
+                        </td>
+                        <td>Nvidia has a nearly 90% market share in AI chip design. Despite successfully riding the Gen AI tidal wave thus far, Nvidia faces growing threats from competitors. OpenAI, which has almost wholly depended on Nvidia graphics processing units (GPUs) until now, has diversified its supply, making multibillion-dollar deals with Broadcom and AMD. OpenAI is purchasing 10 gigawatts (GW) of custom AI accelerators from Broadcom and 6GW of GPU capacity from AMD. Diversifying its chip supply is an astute</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia's Groq deal underscores how the AI chip giant uses its ...</strong><br>
+                            <a href="https://finance.yahoo.com/news/nvidias-groq-deal-underscores-how-the-ai-chip-giant-uses-its-massive-balance-sheet-to-maintain-dominance-183347248.html" class="source-url" target="_blank">https://finance.yahoo.com/news/nvidias-groq-deal-underscores-how-the-ai-chip-giant-uses-its-massive-balance-sheet-to-maintain-dominance-183347248.html</a>
+                        </td>
+                        <td>While Nvidia easily dominates the chip market for AI training, some analysts argue that Nvidia could soon see greater competition in the inference space. That’s because custom chips like Google's (GOOG) TPUs (tensor processing units) — and arguably Groq’s chips called LPUs (language processing units) — may be better suited for certain tasks. LPUs, for instance, are faster and more energy efficient when used for certain models, utilizing a type of memory technology called SRAM within the chips. [...] Nvidia has also invested in chipmakers Intel (INTC) and Enfabrica. The company made a failed attempt around 2020 to acquire British chip architecture designer Arm (ARM).
+
+Nvidia’s wide-ranging investments — many of them in its own customers — have led to accusations that it’s involved in circular financing schemes reminiscent of the dot-com bubble. The company has vehemently denied those claims.
+
+Groq, meanwhile, was looking to become one of Nvidia’s rivals. [...] The move is just the latest in a string of AI deals by Nvidia, the world’s first $5 trillion company. The chipmaker’s investments in AI firms span the entire market, ranging from large language model developers such as OpenAI (OPAI.PVT) and xAI (XAAI.PVT) to “neoclouds” like Lambda (LAMD.PVT) and CoreWeave (CRWV), which specialize in AI services and compete with its Big Tech customers.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia's Aggressive AI Expansion: Strategic Acquisitions ...</strong><br>
+                            <a href="https://www.ainvest.com/news/nvidia-aggressive-ai-expansion-strategic-acquisitions-implications-market-dominance-2512/" class="source-url" target="_blank">https://www.ainvest.com/news/nvidia-aggressive-ai-expansion-strategic-acquisitions-implications-market-dominance-2512/</a>
+                        </td>
+                        <td>Nvidia's relentless pursuit of AI leadership has entered a new phase with a series of high-stakes moves that underscore its ambition to dominate the semiconductor landscape. The company's $20 billion acquisition of Groq, a designer of specialized AI inference chips, and its $900 million talent grab from Enfabrica, a startup focused on large-scale GPU networking, signal a strategic pivot toward consolidating control over both the hardware and infrastructure layers of AI computing. Coupled with [...] Nvidia's aggressive M&A strategy and recalibrated China approach reflect a calculated effort to maintain its leadership in an AI arms race where technological differentiation and ecosystem control are paramount. The Groq acquisition addresses a critical gap in inference capabilities, the Enfabrica deal strengthens infrastructure scalability, and the H200 shipments represent a high-stakes gamble to retain China's market share. While regulatory and geopolitical risks persist, the company's [...] over traditional GPUs while consuming 90% less power, addressing critical bottlenecks in latency, cost per query, and energy efficiency. This acquisition allows
+
+Nvidia
+
+NVDA
+
+-0.32%
+
+to integrate Groq's deterministic, purpose-built inference capabilities into its broader AI ecosystem,
+
+targeting a $100 billion market where speed and efficiency are becoming non-negotiable
+
+for applications ranging from real-time language processing to autonomous systems.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Analysis of Nearly a Hundred NVIDIA AI Investments - 36氪</strong><br>
+                            <a href="https://eu.36kr.com/en/p/3511827665131911" class="source-url" target="_blank">https://eu.36kr.com/en/p/3511827665131911</a>
+                        </td>
+                        <td>Looking at NVIDIA's nearly 100 AI investment projects, we can see that they still bear a strong mark of corporate strategic investment, especially the investments in models and AI cloud platforms. These investee companies are generally also buyers of NVIDIA GPUs. NVIDIA's investment in these companies is to build an ecosystem centered around GPUs, and this ecosystem is to consolidate its position in the AI industry. [...] NVIDIA invested in a large number of AI model companies to lock in customers and foresee the trend of the next - generation computing power. Secondly, in addition to its own powerful network capabilities, NVIDIA expands the efficient collaborative computing power of its GPUs to higher speeds and broader scopes by investing in next - generation network chips. Moreover, NVIDIA has made a long - term layout for embodied intelligence in its investments. Analyzing its investment behavior is of [...] In addition to the above investments, NVIDIA's investments in the core field of AI models also include Cohere (mainly targeting enterprises), Sakana AI (mainly researching small models), and more exploratory and innovative companies such as Reflection AI, Thinking Machines Lab, and Imbue.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia makes boldest move yet, and the fallout begins</strong><br>
+                            <a href="https://finance.yahoo.com/news/nvidia-makes-boldest-move-yet-160700606.html" class="source-url" target="_blank">https://finance.yahoo.com/news/nvidia-makes-boldest-move-yet-160700606.html</a>
+                        </td>
+                        <td>This aggressive move is like Nvidia's smaller but similar AI acquisition in September, when it spent $900 million for chip IP and key staff from Enfabrica.
+
+## U.S. authorities zero in on Nvidia's Southeast Asian partner
+
+As Nvidia continues to lead in AI, it is being caught up in the sticky politics of the semiconductor supply chain. [...] Groq, a nine-year-old firm started by former Google TPU engineers, was never for sale — at least not in public. But Nvidia came in with a $20 billion deal that includes licensing Groq's cutting-edge AI inference technology and bringing on its top leaders, such as CEO Jonathan Ross.
+
+Sources informed CNBC that Nvidia is really buying all of Groq's assets, except for a small GroqCloud firm, even though Groq called the purchase a "non-exclusive licensing agreement."
+
+More Nvidia: [...] Nvidia recently struck a $20 billion deal to acquire the brains of a fierce rival, marking its biggest move to date in the AI arms race. However, the massive chip manufacturer may soon have to respond to more difficult inquiries about the future of its chips.
+
+CEO Jensen Huang offered further detail in an internal email obtained by CNBC.
+
+Prediction Market powered by</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia Solidifies AI Dominance with Landmark $20 Billion ...</strong><br>
+                            <a href="https://markets.financialcontent.com/wral/article/marketminute-2025-12-26-nvidia-solidifies-ai-dominance-with-landmark-20-billion-groq-strategic-acqui-hire" class="source-url" target="_blank">https://markets.financialcontent.com/wral/article/marketminute-2025-12-26-nvidia-solidifies-ai-dominance-with-landmark-20-billion-groq-strategic-acqui-hire</a>
+                        </td>
+                        <td>Strategic pivots will be required from the remaining independent AI chip startups, such as Cerebras or Sambanova. These companies must now decide whether to double down on their niche architectures or seek their own "exit" through partnerships with Nvidia’s rivals. The market may see a flurry of defensive acquisitions as AMD or Intel attempt to secure their own specialized inference talent to keep pace with the new Nvidia-Groq hybrid. [...] The deal, which reached its conclusion in the final days of 2025, was not a traditional acquisition but a multi-layered strategic partnership. Nvidia paid $20 billion in cash to secure a non-exclusive, perpetual license to Groq’s proprietary LPU hardware and software IP. Simultaneously, a mass migration of talent occurred: Groq founder Jonathan Ross—a former lead architect of the Google (NASDAQ: GOOGL) TPU—and President Sunny Madra transitioned to Nvidia to lead a new "Ultra-Low Latency" [...] In a move that has sent shockwaves through Silicon Valley and Wall Street, Nvidia (NASDAQ: NVDA) has effectively neutralized its most formidable challenger in the AI inference space. By orchestrating a massive $20 billion "license and acqui-hire" deal with Groq, the startup famed for its ultra-fast Language Processing Units (LPUs), Nvidia has not only secured the industry's most advanced low-latency technology but has also integrated the visionary leadership of Groq’s founder, Jonathan Ross.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia's $20B Groq Deal: Strategy, LPU Tech & Antitrust</strong><br>
+                            <a href="https://intuitionlabs.ai/articles/nvidia-groq-ai-inference-deal" class="source-url" target="_blank">https://intuitionlabs.ai/articles/nvidia-groq-ai-inference-deal</a>
+                        </td>
+                        <td>indicates AI/HPC is strategic. However, Nvidia still retains a ~92–94% share of the overall GPU add-in-board market (( "Highlights: a modest 2.8% quarter,reached a significant milestone by")). Its CFO has publicly insisted Nvidia’s platform still “dominates” and that the company is “absolutely not losing [its] lead” in AI (( "Highlights: Nvidia's Chief Financial Officer, Colette,This comes after Nvidia briefly")). Nevertheless, any erosion of GPU share or a new architecture’s emergence would [...] the premium paid relative to Groq’s recent funding rounds and Nvidia’s own balance sheet, including implications for investors. We compare this deal to historical precedents (e.g. Nvidia’s Mellanox buy, AMD’s Xilinx acquisition, Microsoft-Inflection) to derive lessons. Case studies of similar “asset acquisitions” illustrate the risks and outcomes for different stakeholders. Finally, we discuss the broader implications for the AI hardware industry and speculate on future directions: from [...] on Nvidia GPUs, according to industry alpha estimates (( "Highlights: This matters because the AI,up from 356,000 last year")) (( "Highlights: In Q3 2025, the GPU,based Radeon RX 9000 series")). This dominance prompted significant strategic moves: in recent years Nvidia has expanded vertically (performance GPUs), horizontally (through acquisitions like Mellanox for networking), and into partnerships (e.g. with Intel on integrated systems). Financially, Nvidia has amassed a war chest—by October</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>OpenAI and NVIDIA Announce Strategic Partnership to Deploy 10 ...</strong><br>
+                            <a href="http://nvidianews.nvidia.com/news/openai-and-nvidia-announce-strategic-partnership-to-deploy-10gw-of-nvidia-systems" class="source-url" target="_blank">http://nvidianews.nvidia.com/news/openai-and-nvidia-announce-strategic-partnership-to-deploy-10gw-of-nvidia-systems</a>
+                        </td>
+                        <td>Strategic partnership enables OpenAI to build and deploy at least 10 gigawatts of AI data centers with NVIDIA systems representing millions of GPUs for OpenAI’s next-generation AI infrastructure.
+ To support the partnership, NVIDIA intends to invest up to $100 billion in OpenAI progressively as each gigawatt is deployed.
+ The first gigawatt of NVIDIA systems will be deployed in the second half of 2026 on the NVIDIA Vera Rubin platform. [...] OpenAI and NVIDIA today announced a letter of intent for a landmark strategic partnership to deploy at least 10 gigawatts of NVIDIA systems for OpenAI’s next-generation AI infrastructure to train and run its next generation of models on the path to deploying superintelligence. To support this deployment including data center and power capacity, NVIDIA intends to invest up to $100 billion in OpenAI as the new NVIDIA systems are deployed. The first phase is targeted to come online in the second [...] OpenAI will work with NVIDIA as a preferred strategic compute and networking partner for its AI factory growth plans. OpenAI and NVIDIA will work together to co-optimize their roadmaps for OpenAI’s model and infrastructure software and NVIDIA’s hardware and software.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia buying AI chip startup Groq for about $20 billion, biggest deal</strong><br>
+                            <a href="https://www.cnbc.com/2025/12/24/nvidia-buying-ai-chip-startup-groq-for-about-20-billion-biggest-deal.html" class="source-url" target="_blank">https://www.cnbc.com/2025/12/24/nvidia-buying-ai-chip-startup-groq-for-about-20-billion-biggest-deal.html</a>
+                        </td>
+                        <td>The deal represents by far Nvidia’s largest purchase ever. The chipmaker’s biggest acquisition to date came in 2019, when it bought Israeli chip designer Mellanox for close to $7 billion. At the end of October, Nvidia had $60.6 billion in cash and short-term investments, up from $13.3 billion in early 2023.
+
+In an email to employees that was obtained by CNBC, Nvidia CEO Jensen Huang said the agreement will expand Nvidia’s capabilities. [...] Nvidia is making its largest purchase ever, acquiring assets from 9-year-old chip startup Groq for about $20 billion.
+   The company was founded by creators of Google’s tensor processing unit, or TPU, which competes with Nvidia for artificial intelligence workloads.
+   Groq, which was valued at $6.9 billion in a financing round in September, framed the deal as a “non-exclusive licensing agreement,” with its CEO and other senior leaders joining Nvidia. 
+
+In this article [...] Nvidia has ramped up its investments in chip startups and the broader ecosystem as its cash pile has mounted. The company has backed AI and energy infrastructure company Crusoe, artificial intelligence model developer Cohere, and boosted its investment in CoreWeave as the AI-centric cloud provider was getting ready to go public this year.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>List of 28 Acquisitions by Nvidia (Sep 2025) - Tracxn</strong><br>
+                            <a href="https://tracxn.com/d/acquisitions/acquisitions-by-nvidia/__Rwvr9cCWEygAYAiBEK0RuL1AbkKNw9sBGPqMEY6zVh4" class="source-url" target="_blank">https://tracxn.com/d/acquisitions/acquisitions-by-nvidia/__Rwvr9cCWEygAYAiBEK0RuL1AbkKNw9sBGPqMEY6zVh4</a>
+                        </td>
+                        <td>Nvidia has made a total of 28 acquisitions. Nvidia has made 28 acquisitions across 8 countries, including United States (18), United Kingdom (2), and Israel (2), spanning 26 sectors such as AI Infrastructure (5), IT Services (4), and Enterprise Storage (3). Peak acquisition years were 2024 with 7, 2020 with 4, and 2025 with 3. The average number of acquisitions per year for the last 5 years (2019–2024) is 3.2. Acquisition count for the current year so far is 3. The most recent acquisition was [...] Media has covered Nvidiafor a total of 2470events in the last 1 year,476of them have been about acquisition activity.
+
+•
+
+Nvidia GB10 chip deep cooperation sparks market speculation of potential acquisition of MediatekTechNews•Sep 04, 2025•MediaTek, Nvidia, Taiwan Semiconductor Manufacturing
+
+•
+
+Nvidia Acquires AI Coding Startup Solver Amid Growing AI InvestmentTechStartups.com•Sep 03, 2025•Nvidia, Solver
+
+• [...] Infineon collaborates with NVIDIA to support humanoid robots with precise motion and efficiencyKorea Newswire•Aug 26, 2025•Nvidia, Infineon
+
+•
+
+Cadence and NVIDIA boost AI designs with hardware accelerationelectronicsforyou.biz•Aug 26, 2025•Cadence, Nvidia
+
+View More Nvidia Recent News
+
+View all Acquisitions by Nvidia
+
+## FAQs about Acquisitions by Nvidia
+
+Nvidia has completed 28 acquisitions so far, with an average acquisition amount of $6.31B.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia's Groq deal underscores how the AI chip giant uses ...</strong><br>
+                            <a href="https://finance.yahoo.com/news/nvidias-groq-deal-underscores-how-the-ai-chip-giant-uses-its-massive-balance-sheet-to-maintain-dominance-183347248.html" class="source-url" target="_blank">https://finance.yahoo.com/news/nvidias-groq-deal-underscores-how-the-ai-chip-giant-uses-its-massive-balance-sheet-to-maintain-dominance-183347248.html</a>
+                        </td>
+                        <td>Bernstein analyst Stacy Rasgon said in a note to clients Thursday that the Nvidia-Groq deal “appears strategic in nature for NVDA as they leverage their increasingly powerful balance sheet to maintain dominance in key areas.” Nvidia’s cash inflow climbed more than 30% from the previous year to $22 billion in its most recent quarter. [...] The move is just the latest in a string of AI deals by Nvidia, the world’s first $5 trillion company. The chipmaker’s investments in AI firms span the entire market, ranging from large language model developers such as OpenAI (OPAI.PVT) and xAI (XAAI.PVT) to “neoclouds” like Lambda (LAMD.PVT) and CoreWeave (CRWV), which specialize in AI services and compete with its Big Tech customers. [...] Cantor Fitzgerald analyst CJ Muse said Nvidia’s "acqui-hire" of Groq talent and licensing of its intellectual property showed the chipmaker “is playing both offense and defense” in the AI space. Muse said the deal would allow Nvidia to take “even greater share of the inference market.”
+
+Nvidia shares rose more than 1% Friday.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia-Groq deal keeps fiction of competition alive: analyst ...</strong><br>
+                            <a href="https://www.cnbc.com/2025/12/26/nvidia-groq-deal-is-structured-to-keep-fiction-of-competition-alive.html" class="source-url" target="_blank">https://www.cnbc.com/2025/12/26/nvidia-groq-deal-is-structured-to-keep-fiction-of-competition-alive.html</a>
+                        </td>
+                        <td>It's a strategy that's been employed by Meta, Google, Microsoft and Amazon. Nvidia itself previously used the tactic, shelling out more than $900 million in September to hire Enfabrica CEO Rochan Sankar and other employees at the AI hardware startup, and to license the company's technology, CNBCreportedat the time.
+
+By avoiding traditional acquisitions, tech companies have been able to skirt some level of antitrust scrutiny and quickly close deals to bring in the people they most covet. [...] Nvidia has been using its expanding cash pile to spread capital across the AI ecosystem, including through recent investments in OpenAI and Intel. At the end of October, Nvidia had $60.6 billion incashand short-term investments, up from $13.3 billion in early 2023.
+
+," wrote the analysts, who kept their buy rating and $300 price target.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia now holds 7.3% of the semiconductor market</strong><br>
+                            <a href="https://siliconsemiconductor.net/article/121358/Nvidia_now_holds_73_of_the_semiconductor_market" class="source-url" target="_blank">https://siliconsemiconductor.net/article/121358/Nvidia_now_holds_73_of_the_semiconductor_market</a>
+                        </td>
+                        <td>With its advanced GPUs and AI-driven innovations, Nvidia is doing much more than just competing in the semiconductors market; it's redefining the industry while steadily growing its market share each year. According to data from Statista and Gartner, Nvidia's share surged from just 2.3% in 2020 to 7.3% in 2024, a threefold increase in just four years. [...] Unlike its rivals, many of whom have seen their market shares stagnate or decline, Nvidia has been on a steady road of growth. Gartner data shows that since 2021, the company's market share has grown by an average of 60% per year, making it the third-largest player in the industry. If this trend continues, Nvidia could surpass Samsung and become the global market leader this year. [...] market, 2% less than a year before that, and less than half of what it had in 2020</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>The Untold Story of Nvidia's AI Hardware Takeover</strong><br>
+                            <a href="https://future-bridge.us/the-rise-of-nvidia-how-ai-hardware-became-the-hottest-sector-in-us-semiconductors/" class="source-url" target="_blank">https://future-bridge.us/the-rise-of-nvidia-how-ai-hardware-became-the-hottest-sector-in-us-semiconductors/</a>
+                        </td>
+                        <td>Nvidia’s dominance in the market comes from its “moat.” A moat is something that insulates a company from competition. This moat is constructed on two foundations. First, the hardware itself. This hardware is extremely hard and costly to design and produce. Second, the CUDA software ecosystem. This produced a massive network effect. But competitors don’t take their hands off the reins. AMD is seriously moving into the AI hardware space. [...] When we look at the spectacular growth of the US semiconductor sector, one player stands tall in this revolution: Nvidia AI chips. Nvidia was already a well-known brand name in the gaming graphics industry. Today, they are the top player when it comes to the business of AI hardware. Indeed, they have developed almost the whole system of the AI boom. Taking a look at their success, it is not just luck; it is the simple result of the wise strategy of seeing the potential of parallel processing [...] computing engine. This is one of the major reasons for the AI semiconductor market growth.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>NVIDIA continues to dominate global semiconductor sector as most ...</strong><br>
+                            <a href="https://brandfinance.com/press-releases/nvidia-continues-to-dominate-global-semiconductor-sector-as-most-valuable-strongest-and-fastest-growing-brand" class="source-url" target="_blank">https://brandfinance.com/press-releases/nvidia-continues-to-dominate-global-semiconductor-sector-as-most-valuable-strongest-and-fastest-growing-brand</a>
+                        </td>
+                        <td>value. [...] exceptional ‘strategy and vision.’ [...] LONDON, 11 March 2025 – NVIDIA has retained its position as the world’s most valuable semiconductor brand, according to a new report from Brand Finance, the world's leading brand valuation consultancy. With a 98% increase in brand value to USD87.9 billion, NVIDIA’s brand value is now more than two and a half times that of TSMC, the second-most valuable brand in the sector.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Here Is Why Nvidia Chips Are Taking Over the Global ... - ReluTech</strong><br>
+                            <a href="https://relutech.com/blogs/hardware/nvidia-chips-taking-over-global-semiconductor-market-2" class="source-url" target="_blank">https://relutech.com/blogs/hardware/nvidia-chips-taking-over-global-semiconductor-market-2</a>
+                        </td>
+                        <td>The remarkable success of the Nvidia Corporation in the semiconductor market, particularly in 2023, can be attributed to the company's decades-long commitment to pioneering GPUs for high-performance tasks like artificial intelligence, gaming, professional design, and simulation. [...] For Nvidia, one of the perks of dominating the discrete GPU market is that it stands to generate increased revenue from boosted price margins caused by scarcity in semiconductors. The company has carved a niche for itself in the semiconductor industry that others can't easily replicate. Its Grace, Ampere, Hopper, and Ada Lovelace chip architectures are some of the world's most advanced and sought-after; this has further buoyed investor confidence in the company's value. [...] What has driven Nvidia's recent success? Decades of pioneering development in semiconductor chip technology, particularly graphics processing units (GPUs), have now placed it as the frontrunner in the global chip market, well ahead of formidable competitors such as Intel and AMD.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>NVIDIA Case Study: Dominating the Logic Semiconductor Market</strong><br>
+                            <a href="https://www.linkedin.com/pulse/case-study-nvidia-dominating-logic-semiconductor-market-orgef" class="source-url" target="_blank">https://www.linkedin.com/pulse/case-study-nvidia-dominating-logic-semiconductor-market-orgef</a>
+                        </td>
+                        <td>### Conclusion: Strategic Packaging as a Market Moat
+
+NVIDIA’s 2025 case is a powerful demonstration of how strategic foresight in semiconductor packaging and supply control can redefine market leadership. By securing TSMC’s advanced CoWoS-L capacity, NVIDIA effectively built a moat around its AI GPU business. [...] The move ensured uninterrupted supply, faster time-to-market for Blackwell GPUs, and record-breaking financial performance. It also highlighted how packaging, often treated as a secondary manufacturing step became a strategic differentiator in the AI era.
+
+This success story exemplifies the convergence of advanced logic design, packaging innovation, and supply chain strategy, and how mastering all three allowed NVIDIA to dominate the global logic semiconductor market in 2025. [...] Competitor Pressure: Rivals such as AMD and Intel struggled to match NVIDIA’s scale, both technologically and logistically, as packaging bottlenecks limited their output.
+ Industry Acceleration: NVIDIA’s dominance pushed the industry toward faster innovation in 3D packaging, chiplet integration, and interconnect technologies.
+ Ecosystem Growth: The success of NVIDIA’s AI chips spurred growth in memory (HBM), power management, and data-center cooling markets.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Could AMD Finally Close the Gap on Nvidia AI Dominance?</strong><br>
+                            <a href="https://www.fool.com/investing/2025/12/22/could-amd-finally-close-gap-nvidia-ai-dominance/" class="source-url" target="_blank">https://www.fool.com/investing/2025/12/22/could-amd-finally-close-gap-nvidia-ai-dominance/</a>
+                        </td>
+                        <td>Indeed, the semiconductor industry appeared caught off guard when it became clear that Nvidia's AI accelerators powered OpenAI's game-changing GPT-4 AI platform in 2023. Nvidia was so far ahead of rivals that even now, Nvidia holds an estimated 80% of this market, according to a Susquehanna analyst. [...] An upcoming chip release by AMD in 2026 could challenge Nvidia's dominance.
+
+Throughout its history, Advanced Micro Devices (AMD 0.02%) has developed a reputation for closing or at least reducing the competitive gap with rivals. This was true when it challenged Intel's supremacy in prior decades and, more recently, its clashes with Nvidia (NVDA +1.02%).</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>The Global Semiconductor Industry in One Giant Chart</strong><br>
+                            <a href="https://www.visualcapitalist.com/the-global-semiconductor-industry-in-one-giant-chart/" class="source-url" target="_blank">https://www.visualcapitalist.com/the-global-semiconductor-industry-in-one-giant-chart/</a>
+                        </td>
+                        <td>Nvidia alone represents $4.4 trillion market cap, accounting for roughly 37% of the entire global sector. The company’s chips are widely used for developing and running modern AI workloads, powering everything from large language models to autonomous vehicles. Other leading U.S. players include Broadcom ($1.8 trillion) and AMD ($350 billion), both of which signed massive deals with OpenAI in 2025.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia's Dominance in the AI Chip Market - MarketsandMarkets</strong><br>
+                            <a href="https://www.marketsandmarkets.com/blog/SE/nvidia-dominance-in-the-ai-chip-market" class="source-url" target="_blank">https://www.marketsandmarkets.com/blog/SE/nvidia-dominance-in-the-ai-chip-market</a>
+                        </td>
+                        <td>NVIDIA holds a dominant position in the AI chip market, thanks to its powerful graphics processing units (GPUs), particularly the A100 and H100 models, which are now industry standards in AI. These GPUs are widely used in data centers, AI research, and by tech giants like Google, Microsoft, and Amazon for training large language models (LLMs), neural networks, and AI-powered applications. [...] While Nvidia's dominance in the AI chip market is undisputed, the competitive landscape is far from stagnant. Established players like Intel and AMD, as well as a host of emerging startups, are vying for a slice of this lucrative pie. However, their efforts have yet to yield significant results, as Nvidia's technological edge and market penetration continue to overshadow their offerings. [...] Intel, once a behemoth in the semiconductor industry, has struggled to gain a foothold in the AI chip market. Its recent Gaudi 3 accelerator, while touted as a more cost-effective alternative to Nvidia's H100, has yet to make a significant dent in Nvidia's market share.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Who Are the Top U.S. Companies in the Semiconductor Industry?</strong><br>
+                            <a href="https://www.z2data.com/insights/who-are-the-top-us-companies-in-the-semiconductor-industry" class="source-url" target="_blank">https://www.z2data.com/insights/who-are-the-top-us-companies-in-the-semiconductor-industry</a>
+                        </td>
+                        <td>Nvidia’s stratospheric upward trajectory in the semiconductor world has been spectacular to witness. The company has grown so fast that its current TTM revenue is more than six times what it was just two years ago, in 2023. The chipmaker’s most recent quarterly revenue neared an astonishing $47 billion%20today,Center%20revenue%20grew%2017%25%20sequentially.)—up over 50% from a year ago—and some analysts believe it has a legitimate chance at becoming the U.S.’s most valuable company. [...] In what should come as little surprise to those following the AI boom over the past year, chip designer Nvidia is now the largest semiconductor firm in the U.S.—and one of the most valuable companies in the entire world. [...] For all the hand-wringing about the decline of American preeminence in the global semiconductor industry, the U.S. continues to enjoy a larger market share of the sector than any other country. But companies like Nvidia and AMD have embraced the fabless business model, and a growing roster of firms are outsourcing manufacturing to foundries in Taiwan, Korea, and China. The result, for the U.S., is a situation in which American companies continue to make billions in this consequential industry</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia Stock Is 'Ripe' for Gains in 2026, According to This Top Analyst</strong><br>
+                            <a href="https://finance.yahoo.com/news/nvidia-stock-ripe-gains-2026-143002055.html" class="source-url" target="_blank">https://finance.yahoo.com/news/nvidia-stock-ripe-gains-2026-143002055.html</a>
+                        </td>
+                        <td>Tigress points to Nvidia’s dominance in data center computing as the foundation, but sees additional upside from expanding use cases in areas like autonomous driving and healthcare. A steady stream of record quarters reinforces Nvidia’s role as the core engine behind global infrastructure buildouts. With strong cash generation, disciplined capital allocation, and underappreciated growth drivers emerging, Tigress views Nvidia as a long-duration winner still early in its journey. [...] Its CUDA platform entrenched Nvidia deeply within developer workflows, shifting the company from a component supplier to an industry standard. Today, under Jensen Huang, Nvidia stands as a dominant force with global reach and immense financial scale, currently boasting a market capitalization of nearly $4.6 trillion. [...] Nvidia's operational dominance has translated into a stock story marked by sharp runs, healthy pauses, and strong long-term structure. NVDA has rallied aggressively through 2025, only stopping periodically to consolidate gains. After peaking near $212.19 in late October, the stock is down by 11.67%. Even after that dip, shares of the chip giant remain firmly in an uptrend, up over 41.9% year-to-date (YTD), and 22.9% over the past six months.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Beijing Antitrust Regulator Slaps Nvidia Over 2020 Deal, What ...</strong><br>
+                            <a href="https://www.geopolitechs.org/p/beijing-antitrust-regulator-slaps" class="source-url" target="_blank">https://www.geopolitechs.org/p/beijing-antitrust-regulator-slaps</a>
+                        </td>
+                        <td>> Recently, following a preliminary investigation, it was determined that NVIDIA Corporation had violated the Anti-Monopoly Law of the People’s Republic of China and the Decision of the State Administration for Market Regulation on the Antitrust Review of the Acquisition of Mellanox Technologies, Ltd. by NVIDIA Corporation with Additional Restrictive Conditions. In accordance with the law, the State Administration for Market Regulation has decided to conduct a further investigation into the [...] In April 2020, SAMR approved the deal but attached strict conditions. Regulators worried that after the merger, Nvidia might bundle products or discriminate in supply, squeezing competitors and hurting customers. So they set rules: Nvidia and Mellanox had to supply products on fair, reasonable and non-discriminatory terms; allow customers to buy up to a year’s worth of stock at a time; no forced bundling of GPUs and networking equipment; and no treating some customers better than others. These [...] The investigation is based on China’s Antimonopoly Law, specifically the rules about merger conditions and abuse of market dominance. A key reference is Article 58 of the 2022 revision. That article says: if a company breaks promises it made during a merger review, and its behavior ends up limiting competition, the regulator — SAMR — can fine the company up to 10% of its previous year’s sales. That fits Nvidia’s case: when its $6.9 billion takeover of Mellanox was cleared in 2020, it came with</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Chinese regulator says Nvidia's Mellanox acquisition violated ...</strong><br>
+                            <a href="https://www.datacenterdynamics.com/en/news/chinese-regulator-says-nvidias-mellanox-acquisition-violated-antitrust-law-as-govt-opens-two-separate-chip-probes-ahead-of-china-us-trade-talks/" class="source-url" target="_blank">https://www.datacenterdynamics.com/en/news/chinese-regulator-says-nvidias-mellanox-acquisition-violated-antitrust-law-as-govt-opens-two-separate-chip-probes-ahead-of-china-us-trade-talks/</a>
+                        </td>
+                        <td># DCD
+
+# Chinese regulator says Nvidia’s Mellanox acquisition violated antitrust law, as gov’t opens two separate chip probes
+
+Chip-giant failed to comply with acquisition provisions, regulator rules
+
+Nvidia’s 2020 acquisition of Mellanox violated China’s antitrust law, the country’s market regulator has preliminarily ruled. [...] The regulator has not specified exactly how Nvidia has violated the regulations; however, Reuters reported that one such agreement term was that Nvidia would continue to supply the Chinese market with GPU accelerators, something which both the Biden and Trump administrations have sought to restrict.
+
+China’s regulator can issue fines of between one and ten percent of a company’s annual sales from the previous year to those found to have violated antitrust laws. [...] China’s State Administration for Market Regulation (SAMR) opened an investigation into the deal in late 2024 and found that the GPU giant breached anti-monopoly laws by failing to fully comply with provisions outlined by the regulator when it approved the deal.
+
+Nvidia</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>A Procedural Analysis of China's Investigation into NVIDIA's Alleged ...</strong><br>
+                            <a href="https://www.jdsupra.com/legalnews/a-procedural-analysis-of-china-s-6334927/" class="source-url" target="_blank">https://www.jdsupra.com/legalnews/a-procedural-analysis-of-china-s-6334927/</a>
+                        </td>
+                        <td>1 In the approval decision for NVIDIA’s acquisition of Mellanox, SAMR required NVIDIA and Mellanox to comply with several additional restrictive conditions, based on concerns that the transaction could have anti-competitive effects on the global and Chinese markets for GPU accelerators, dedicated networking equipment, and high-speed Ethernet adapters. These conditions included: (1) NVIDIA and Mellanox were prohibited from bundling products or imposing any unreasonable trading conditions when [...] The Competition Policy Coordination Division oversees the development and coordination of competition policies, while Antitrust Enforcement Division I focuses on cases involving cartel behavior, abuse of market dominance, and anti-competitive practices related to intellectual property. Antitrust Enforcement Division II, which handles merger control, is responsible for reviewing mergers and acquisitions, including those that may not meet the formal notification thresholds but could still have [...] After ten months of dormancy that fueled market speculation, the recent announcement confirms SAMR is following the specific procedure for investigating breaches of merger remedy conditions. The crucial shift to a “further investigation” signals that SAMR has completed its initial review and secured preliminary evidence suggesting NVIDIA’s violation.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia's $20B Groq Deal: Strategy, LPU Tech & Antitrust | IntuitionLabs</strong><br>
+                            <a href="https://intuitionlabs.ai/articles/nvidia-groq-ai-inference-deal" class="source-url" target="_blank">https://intuitionlabs.ai/articles/nvidia-groq-ai-inference-deal</a>
+                        </td>
+                        <td>These concerns shape deal-making. Nvidia’s 2019 acquisition of Mellanox (a networking-chip company) took over a year to clear (( "Highlights: had previously accused Nvidia of,capabilities while minimizing antitrust scrutiny")), and in early 2025 Chinese regulators opened a new probe, alleging Nvidia broke some conditions of that approval. Even more dramatically, Nvidia’s $40 billion attempt to acquire ARM (a key CPU/IP vendor) was blocked by authorities in the U.S., UK, and EU mid-2022 amid [...] Regulators are a key concern. Nvidia has faced heightened antitrust scrutiny globally due to its near-monopoly in AI accelerators (( "Highlights: The acquisition also puts past,capabilities while minimizing antitrust scrutiny")) (( "Highlights: Last year, the United States,“Nvidia acknowledged allocating its chips")). Past large deals – notably the 2019 Mellanox acquisition ($6.9B) (( "Highlights: had previously accused Nvidia of,capabilities while minimizing antitrust scrutiny")) and the [...] 2025 it reported roughly $6.06 billion in cash and short-term investments (( "Highlights: This deal marks the largest,at the beginning of 2566"))—to pursue acquisitions. However, its very success has drawn regulatory attention: agencies in the U.S., EU, UK, China and elsewhere have opened enquiries or subpoenas into Nvidia’s practices, concerned about switching costs and market power (( "Highlights: Last year, the United States,“Nvidia acknowledged allocating its chips")) (( "Highlights:</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia strikes $20B deal to license assets, hire executives from AI ...</strong><br>
+                            <a href="https://www.youtube.com/watch?v=bET4XJ5TcwE" class="source-url" target="_blank">https://www.youtube.com/watch?v=bET4XJ5TcwE</a>
+                        </td>
+                        <td>far Nvidia's largest deal yet. Nvidia is calling it a licensing agreement, not an acquisition. The cloud business stays independent. But it's the same playbook that Microsoft, Google, and Amazon have used to scoop up AI talent without triggering regulatory reviews. Now, Nvidia, it is sitting on $60 billion in cash, up from 13 billion two years ago. So, they can afford to pay up. But in fact, they have been looking for places to park that cash. So the real question is, why use it for a company</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>What the Nvidia-Groq Headlines Missed + The 3 Bottlenecks That ...</strong><br>
+                            <a href="https://natesnewsletter.substack.com/p/the-nvidia-groq-deal-is-bigger-than" class="source-url" target="_blank">https://natesnewsletter.substack.com/p/the-nvidia-groq-deal-is-bigger-than</a>
+                        </td>
+                        <td>Here’s the part that makes this more than a chip story: Jonathan Ross designed Google’s TPU, the custom chip that powers Google’s entire AI infrastructure. Nvidia just brought the architect of their biggest competitor’s silicon into their own organization, and they did it through a structure that sidesteps the regulatory review a traditional acquisition would have triggered.
+
+Ross and Madra are the asset. That’s what Nvidia paid for. [...] Big Tech wants the people and the rights—not the cap table, not the liabilities, not the regulatory review, not the integration work.
+
+Without the chip story, this deal looks random. It’s not. The reason “license + acquihire” is rational comes down to three bottlenecks that now determine who can turn model capability into product capability: inference economics, memory and packaging supply, and the small pool of people who can ship inference-first silicon. [...] What happened — the actual deal structure, who moved, what stayed, and why Jonathan Ross specifically matters
+ Who’s involved — Nvidia’s game versus Google’s game, and why inference is the battleground
+ Why it matters — three bottlenecks that make this deal shape rational, explained without assuming you have a chip design background
+ What to watch — regulatory scrutiny, financing structures, and the employee conversations that will follow</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia's Groq Deal Is the Latest That Has Rattled Silicon Valley</strong><br>
+                            <a href="https://www.businessinsider.com/nvidia-groq-deals-silicon-valley-2025-12" class="source-url" target="_blank">https://www.businessinsider.com/nvidia-groq-deals-silicon-valley-2025-12</a>
+                        </td>
+                        <td>Now, traditional acquisitions have become rarer because of the time and uncertainty of getting regulatory approval. As a result, companies like Nvidia have been getting creative, using licensing deals to skirt regulators and snap up key talent quickly.
+
+The deal sounded familiar to many closely following the tech industry. After all, the past two years saw a spate of similar AI deals, and the tech industry will likely see more next year. [...] Nvidia shocked the tech world with the news of entering into a licensing agreement with Groq.
+ Terms were not disclosed, though many on X have criticized the deal for leaving employees out.
+ Traditional acquisitions have become rarer because of the uncertainty of regulatory approval.
+
+On Christmas Eve, Nvidia shocked the tech world with the announcement that it is entering into a non-exclusive licensing agreement with Groq, a company that designs custom chips for AI inference.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Mergers: Commission opens in-depth investigation</strong><br>
+                            <a href="https://ec.europa.eu/commission/presscorner/detail/pt/ip_21_5624" class="source-url" target="_blank">https://ec.europa.eu/commission/presscorner/detail/pt/ip_21_5624</a>
+                        </td>
+                        <td>NVIDIA, headquartered in the US, invented the graphics-processing unit (“GPU”) in 1999. NVIDIA specialises in markets in which GPU-based visual computing and accelerated computing platforms can provide enhanced throughput for applications. NVIDIA's products cover areas in gaming, professional visualisation, datacentres and automotive. Through its acquisition of Mellanox, approved by the Commission in December 2019 and completed in April 2020, NVIDIA also supplies network interconnect products [...] The proposed transaction was notified to the Commission on 8 September 2021. On 6 October 2021, NVIDIA submitted commitments to address some of the Commission's preliminary concerns. However, the Commission considered these commitments insufficient to clearly dismiss its serious doubts as to the effect of the transaction. The Commission therefore did not test them with market participants. [...] , automotive applications and gaming. Arm licenses out intellectual property (‘IP') for processing units, in particular to semiconductor chipmakers and Systems-on-Chip (‘SoC') developers. By acquiring Arm, NVIDIA would gain full control over Arm's technology and licensing business.
+
+The Commission's preliminary competition concerns</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia/Arm, In the Matter of | Federal Trade Commission</strong><br>
+                            <a href="https://www.ftc.gov/legal-library/browse/cases-proceedings/2110015-nvidiaarm-matter" class="source-url" target="_blank">https://www.ftc.gov/legal-library/browse/cases-proceedings/2110015-nvidiaarm-matter</a>
+                        </td>
+                        <td>The Federal Trade Commission filed a law enforcement action to block U.S. semiconductor chip supplier Nvidia Corp.’s $40 billion acquisition of UK-based semiconductor design firm Arm Ltd., the largest transaction in the history of the semiconductor industry. The FTC’s action seeks to preserve competition in markets for computer chips used in datacenters and in automotive advanced driver assistance systems. The complaint named Nvidia Corp., Arm Ltd., and Arm owner Softbank Group Corp. In [...] February 2022, Nvidia Corp. announced that it had terminated its proposed acquisition of Arm Ltd. (Arm) from SoftBank Group Corp, and the Commission dismissed the complaint. [...] ## Case Timeline
+
+PRESS RELEASE: Statement Regarding Termination of Nvidia Corp.’s Attempted Acquisition of Arm Ltd.
+
+File
+
+Order Dismissing Complaint (64.62 KB)
+
+File
+
+Notice of Appearance by Counsel Supporting the Complaint  (2 MB)
+
+File
+
+Notice of Appearance by Counsel Supporting the Complaint (2.01 MB)
+
+File
+
+Notice of Appearance by Counsel Supporting the Complaint  (2 MB)
+
+File
+
+Notice of Appearance by Counsel Supporting the Complaint (2 MB)
+
+File</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>NVIDIA Receives Approval to Proceed with Mellanox Acquisition ...</strong><br>
+                            <a href="http://nvidianews.nvidia.com/news/nvidia-receives-approval-to-proceed-with-mellanox-acquisition-from-chinas-antitrust-authority" class="source-url" target="_blank">http://nvidianews.nvidia.com/news/nvidia-receives-approval-to-proceed-with-mellanox-acquisition-from-chinas-antitrust-authority</a>
+                        </td>
+                        <td># NVIDIA Receives Approval to Proceed with Mellanox Acquisition from China’s Antitrust Authority
+
+April 16, 2020
+
+NVIDIA today announced that it has received approval from all necessary authorities to proceed with its planned acquisition of Mellanox, as announced in March 2019. [...] The latest approval by China’s State Administration for Market Regulation follows antitrust approval from the European Commission and Mexico and the expiration of the waiting period under U.S. antitrust laws. With the exception of the remaining customary closing conditions, all conditions to the deal’s closing have been satisfied. [...] or software defects; changes in consumer preferences or demands; changes in industry standards and interfaces; unexpected loss of performance of our products or technologies when integrated into systems; as well as other factors detailed from time to time in the most recent reports NVIDIA files with the Securities and Exchange Commission, or SEC, including, but not limited to, its annual report on Form 10-K and quarterly reports on Form 10-Q. Copies of reports filed with the SEC are posted on</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia's $20 Billion Acquisition Of AI Chip Innovator Groq ...</strong><br>
+                            <a href="https://shiningpens.com/nvidias-20-billion-acquisition-of-ai-chip-innovator-groq-signals-major-shift-in-artificial-intelligence-hardware-market/" class="source-url" target="_blank">https://shiningpens.com/nvidias-20-billion-acquisition-of-ai-chip-innovator-groq-signals-major-shift-in-artificial-intelligence-hardware-market/</a>
+                        </td>
+                        <td>The AI industry relies heavily on hardware advancements to support the rapid training and deployment of deep learning models. The Nvidia-Groq merger could fuel a new wave of performance improvements, making it possible to train larger language models faster and at lower cost. Cloud service providers such as Amazon Web Services, Microsoft Azure, and Google Cloud are expected to benefit from the expanded capabilities Nvidia can now offer. [...] Nvidia’s $20 billion acquisition of Groq symbolizes more than just another corporate deal—it’s a defining moment in the evolution of AI hardware. As demand for specialized chips accelerates, Nvidia’s strategy to integrate innovative architectures like Groq’s TSP demonstrates its commitment to staying ahead of both technological and market trends. The merger enhances Nvidia’s ability to deliver powerful, efficient, and scalable computing solutions worldwide. [...] The consolidation of AI hardware innovation under major players raises questions about accessibility and diversity in the AI ecosystem. While Nvidia’s acquisition of Groq could lead to enhanced performance standards, it may also reduce competition and limit open experimentation with alternative architectures. Startups entering the AI chip space will need to innovate rapidly to carve out niches that differentiate from Nvidia’s expansive portfolio.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia Solidifies AI Dominance with Landmark $20 Billion ...</strong><br>
+                            <a href="https://markets.financialcontent.com/wral/article/marketminute-2025-12-26-nvidia-solidifies-ai-dominance-with-landmark-20-billion-groq-strategic-acqui-hire" class="source-url" target="_blank">https://markets.financialcontent.com/wral/article/marketminute-2025-12-26-nvidia-solidifies-ai-dominance-with-landmark-20-billion-groq-strategic-acqui-hire</a>
+                        </td>
+                        <td>suggests that the future of AI hardware will be defined by specialized, deterministic processing rather than general-purpose compute. [...] The most significant challenge emerging from this deal will be the potential for a "monoculture" in AI hardware. If Nvidia successfully absorbs all viable alternative architectures, the pace of innovation could ironically slow down as the pressure of competition diminishes. However, for the next 12 to 18 months, the synergy between Nvidia’s scale and Groq’s speed is likely to trigger a massive surge in real-time AI applications, from autonomous robotics to real-time language translation. [...] This strategic maneuver, finalized on December 24, 2025, represents a pivotal shift in the AI hardware wars, signaling Nvidia’s intent to dominate the "inference era" just as it did the training era.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia's AI Ecosystem: Unlocking High-Growth ...</strong><br>
+                            <a href="https://www.ainvest.com/news/nvidia-ai-ecosystem-unlocking-high-growth-opportunities-2026-strategic-investments-2512/" class="source-url" target="_blank">https://www.ainvest.com/news/nvidia-ai-ecosystem-unlocking-high-growth-opportunities-2026-strategic-investments-2512/</a>
+                        </td>
+                        <td>Nvidia's aggressive expansion into the AI ecosystem has positioned it as a linchpin of the global artificial intelligence revolution. By strategically investing in startups, forming partnerships with hyperscalers, and developing cutting-edge infrastructure, the company is not only securing its dominance in AI hardware but also shaping the next wave of innovation. For investors, understanding Nvidia's portfolio and its implications for 2026 offers a roadmap to high-growth opportunities in the AI [...] Nvidia's ecosystem investments are not just about short-term gains-they are a calculated bet on the long-term trajectory of AI. By backing startups, infrastructure providers, and enterprise tools, the company is ensuring its GPUs remain indispensable in a world increasingly reliant on artificial intelligence. For investors, aligning with Nvidia's portfolio offers exposure to multiple high-growth areas, from LLMs to robotics, with the added benefit of a company that is both a technology leader [...] Symbols
+
+# Nvidia's AI Ecosystem: Unlocking High-Growth Opportunities in 2026 Through Strategic Investments
+
+Generated by AI AgentTheodore QuinnReviewed byAInvest News Editorial Team
+
+Saturday, Dec 27, 2025 2:45 pm ET3min read
+
+AI Podcast:Your News, Now Playing
+
+NVDA
+
+--
+
+Aime Summary
+
+- Nvidia's strategic investments in 59 AI startups (2024-2025) and partnerships with OpenAI/Anthropic solidify its AI hardware dominance.
+
+- Focus on LLMs, infrastructure providers, and enterprise tools positions</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia's $20 Billion Strategic Move: Licensing Groq and Hiring Its ...</strong><br>
+                            <a href="http://markets.chroniclejournal.com/chroniclejournal/article/marketminute-2025-12-26-nvidias-20-billion-strategic-move-licensing-groq-and-hiring-its-ceo-to-dominate-ai-inference" class="source-url" target="_blank">http://markets.chroniclejournal.com/chroniclejournal/article/marketminute-2025-12-26-nvidias-20-billion-strategic-move-licensing-groq-and-hiring-its-ceo-to-dominate-ai-inference</a>
+                        </td>
+                        <td>In the short term, the market should expect a period of rapid integration as Jonathan Ross and his team begin work on the "Vera Rubin" platform. The goal is to create a "Universal AI Chip" that can switch between the parallel processing needed for training and the deterministic, low-latency processing needed for inference. If successful, this would make Nvidia's hardware indispensable for every stage of the AI lifecycle, potentially locking in customers for another decade. [...] Furthermore, the deal creates a challenging environment for other AI hardware startups. With Nvidia willing to pay $20 billion to absorb a competitor, the "bar for independence" has been raised. Startups may find it harder to secure venture capital if the ultimate fate of any successful innovator is to be "acqui-hired" by the incumbent. However, for some founders, this deal sets a lucrative new ceiling for what a successful exit can look like in the age of regulatory scrutiny. [...] Longer-term, the industry may see a "pivot to specialized silicon." As Nvidia absorbs the best general-purpose AI tech, competitors like Alphabet Inc. (NASDAQ: GOOGL) and Meta (NASDAQ: META) may double down on their own internal custom silicon (TPUs and MTIA) to maintain some level of independence. The risk for Nvidia is that by becoming "everything to everyone," they may open the door for a hyper-specialized startup to find a niche they've overlooked—though, as the Groq deal shows, Nvidia is</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>The Untold Story of Nvidia's AI Hardware Takeover</strong><br>
+                            <a href="https://future-bridge.us/the-rise-of-nvidia-how-ai-hardware-became-the-hottest-sector-in-us-semiconductors/" class="source-url" target="_blank">https://future-bridge.us/the-rise-of-nvidia-how-ai-hardware-became-the-hottest-sector-in-us-semiconductors/</a>
+                        </td>
+                        <td>Nvidia wished to completely dominate the high-end of the AI hardware market. So, they did not just sell individual chips; they sold entire systems. The DGX line stands to be a perfect example. It is a complete AI supercomputer in a box. It comes with all the hardware/software you require. Moreover, they handle all the complex tasks of connecting several GPUs. They make use of their special NVLink technology to achieve this. [...] They are employing their Instinct MI series chips and ROCm software stack. New startups are popping up as well. Firms such as SambaNova and Cerebras are creating entirely new architectures for AI. Nvidia has the task of always innovating at a faster rate than its competition. They have to keep making their hardware so much improved. They need to make their software so much more integrated. This will not be worth the hassle for customers to switch; it is a continuous war. Additionally, it keeps [...] As we conclude our dive into Nvidia’s ascension, it is apparent that the company is not merely a chipmaker. It is the foundation of the modern era’s AI revolution. The strategic vision of the company is evident. Its vertical integration with the DGX is intelligent. Moreover, its dependence on the CUDA ecosystem has built an unassailable niche in the AI hardware space. Through geopolitical turmoil, brutal competition from hyperscalers, and the built-in risk of a brittle supply chain, Nvidia has</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia's Aggressive AI Expansion: Strategic Acquisitions and Their ...</strong><br>
+                            <a href="https://www.ainvest.com/news/nvidia-aggressive-ai-expansion-strategic-acquisitions-implications-market-dominance-2512/" class="source-url" target="_blank">https://www.ainvest.com/news/nvidia-aggressive-ai-expansion-strategic-acquisitions-implications-market-dominance-2512/</a>
+                        </td>
+                        <td>Nvidia's relentless pursuit of AI leadership has entered a new phase with a series of high-stakes moves that underscore its ambition to dominate the semiconductor landscape. The company's $20 billion acquisition of Groq, a designer of specialized AI inference chips, and its $900 million talent grab from Enfabrica, a startup focused on large-scale GPU networking, signal a strategic pivot toward consolidating control over both the hardware and infrastructure layers of AI computing. Coupled with [...] Symbols
+
+# Nvidia's Aggressive AI Expansion: Strategic Acquisitions and Their Implications for Market Dominance
+
+Generated by AI AgentCharles Hayes
+Reviewed byAInvest News Editorial Team
+
+Wednesday, Dec 24, 2025 8:40 pm ET3min read
+
+AI Podcast:
+Your News, Now Playing
+
+NVDA
+
+Aime Summary
+
+-
+
+Nvidia
+
+NVDA
+
+-0.32%
+
+acquires Groq ($20B) and Enfabrica ($900M) to consolidate AI hardware/infrastructure dominance, targeting $100B inference market and data center scalability.
+
+- Resumes H200
+
+chip [...] The recent acquisitions and China strategy are seen as catalysts for sustained growth. Groq's integration is expected to unlock new revenue streams in the inference market, while Enfabrica's infrastructure tools enhance the stickiness of Nvidia's ecosystem. Meanwhile, the H200 shipments, though subject to regulatory uncertainty, could provide a near-term boost to revenue and reinforce Nvidia's role as the de facto standard for AI hardware. However, investors must contend with elevated valuation</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia (NVDA): Transition To Long Thinking Models Is ...</strong><br>
+                            <a href="https://seekingalpha.com/article/4855042-nvidia-transition-to-long-thinking-models-is-beyond-traditional-ai-growth-patterns" class="source-url" target="_blank">https://seekingalpha.com/article/4855042-nvidia-transition-to-long-thinking-models-is-beyond-traditional-ai-growth-patterns</a>
+                        </td>
+                        <td>The strong buy rating is supported by Nvidia’s dominant AI hardware/software moat, 15x Blackwell throughput leap, $0.5T revenue pipeline, and robust hyperscaler demand, with technicals favoring accumulation on dips.
+ China export controls and power scarcity could cut NVDA revenue by 15–25% by 2027, especially if Chinese firms shift to domestic chips or hyperscalers adopt custom silicon, warranting close monitoring. [...] Nvidia is rated a strong buy, driven by its dominant AI infrastructure position and accelerating GPU architectures amid the end of Moore's Law.
+ NVDA's revenue momentum is underpinned by a $0.5 trillion Blackwell/Rubin pipeline, robust hyperscaler demand, and a projected 40% long-term CAGR.
+ Key risks include China export controls, power constraints, customer concentration, and potential re-rating if open-source AI or custom silicon erode demand. [...] As per my analysis, NVIDIA Corporation (NVDA) is currently attached with a strong buy rating, being the largest AI infrastructure (hardware + software) supplier. My Nvidia stock investment thesis is focused on its accelerated GPU architectures based on the
+
+This article was written by
+
+Esxeleryn Analytics
+
+251Followers</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>Nvidia's $20B Groq Deal: Strategy, LPU Tech & Antitrust | IntuitionLabs</strong><br>
+                            <a href="https://intuitionlabs.ai/articles/nvidia-groq-ai-inference-deal" class="source-url" target="_blank">https://intuitionlabs.ai/articles/nvidia-groq-ai-inference-deal</a>
+                        </td>
+                        <td>Personnel “Acquihire”: Founder and CEO Jonathan Ross, President Sunny Madra, and other senior Groq engineers moved to Nvidia to “focus on developing and scaling the licensed technology” (( "Highlights: As part of the agreement,,and scaling the licensed technologies")) (( "Highlights: Call it what you want,,agreement” without disclosing the price")). Their presence at NVIDIA means its teams gain decades of combined AI hardware expertise. [...] the premium paid relative to Groq’s recent funding rounds and Nvidia’s own balance sheet, including implications for investors. We compare this deal to historical precedents (e.g. Nvidia’s Mellanox buy, AMD’s Xilinx acquisition, Microsoft-Inflection) to derive lessons. Case studies of similar “asset acquisitions” illustrate the risks and outcomes for different stakeholders. Finally, we discuss the broader implications for the AI hardware industry and speculate on future directions: from [...] future products, or offer specialized inference accelerators for markets like autonomous vehicles, robotics, and adaptive agents. In short, Groq’s LPU tech represents a complement to Nvidia’s GPUs, potentially broadening Nvidia’s product portfolio.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>The AI Industry Is Eating Itself: Nvidia's $20B Power Play ...</strong><br>
+                            <a href="https://pub.towardsai.net/the-ai-industry-is-eating-itself-nvidias-20b-power-play-the-end-of-scaling-and-the-2-trillion-f5e000f7c5f7" class="source-url" target="_blank">https://pub.towardsai.net/the-ai-industry-is-eating-itself-nvidias-20b-power-play-the-end-of-scaling-and-the-2-trillion-f5e000f7c5f7</a>
+                        </td>
+                        <td>> The industry is over-rotated on a single bet (infinite LLM scaling), over-exposed to a single vendor (Nvidia), and under-prepared for what happens if both assumptions fail.
+
+Nvidia’s Groq deal is about securing the next phase of AI hardware. The scaling debate is about whether there will be software and business models worth running on it.
+
+## Nvidia’s $20 Billion Non-Acquisition
+
+## What Nvidia Actually Bought
+
+Based on current reporting, Nvidia effectively acquired three things from Groq: [...] Multiple reports say Nvidia agreed to a deal worth around $20 billion to license technology from Groq, an AI chip startup, and hire its founder Jonathan Ross along with president Sunny Madra. Not acquire — license. On paper, Groq remains an independent company under a new CEO. In practice, Nvidia now controls its most interesting ideas and its key people.
+
+At almost the same time, a different kind of shock hit the AI world.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <strong>NVIDIA and Intel to Develop AI Infrastructure and Personal ...</strong><br>
+                            <a href="http://nvidianews.nvidia.com/news/nvidia-and-intel-to-develop-ai-infrastructure-and-personal-computing-products" class="source-url" target="_blank">http://nvidianews.nvidia.com/news/nvidia-and-intel-to-develop-ai-infrastructure-and-personal-computing-products</a>
+                        </td>
+                        <td>“AI is powering a new industrial revolution and reinventing every layer of the computing stack — from silicon to systems to software. At the heart of this reinvention is NVIDIA’s CUDA architecture,” said NVIDIA founder and CEO Jensen Huang. “This historic collaboration tightly couples NVIDIA’s AI and accelerated computing stack with Intel’s CPUs and the vast x86 ecosystem — a fusion of two world-class platforms. Together, we will expand our ecosystems and lay the foundation for the next era of [...] Certain statements in this press release including, but not limited to, statements as to: AI powering a new industrial revolution and reinventing every layer of the computing stack — from silicon to systems to software; together, NVIDIA and Intel expanding their ecosystems and lay the foundation for the next era of computing; the benefits, impact, performance, and availability of NVIDIA’s products, services, and technologies; expectations with respect to NVIDIA’s third party arrangements, [...] Certain statements in this press release including, but not limited to, statements as to: AI powering a new industrial revolution and reinventing every layer of the computing stack — from silicon to systems to software; together, NVIDIA and Intel expanding their ecosystems and lay the foundation for the next era of computing; the benefits, impact, performance, and availability of NVIDIA’s products, services, and technologies; expectations with respect to NVIDIA’s third party arrangements,</td>
+                    </tr>
+                
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="footer">
+            <p>Generated by Deep Research Agent on 2025-12-29 10:07:06</p>
+        </div>
+    </body>
+    </html>
+    
