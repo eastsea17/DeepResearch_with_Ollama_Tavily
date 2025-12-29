@@ -9,8 +9,8 @@ class TavilyConfig:
     BASE_URL = "https://api.tavily.com/search"
     
     # User-configurable parameters
-    SEARCH_DEPTH = "basic"  # "basic" or "advanced"
-    MAX_RESULTS = 5
+    SEARCH_DEPTH = "advanced"  # "basic" or "advanced"
+    MAX_RESULTS = 10
     INCLUDE_DOMAINS = []
     EXCLUDE_DOMAINS = []
     
